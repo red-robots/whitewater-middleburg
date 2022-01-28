@@ -77,7 +77,7 @@ $blank_image = THEMEURI . "images/rectangle.png";
 					// print_r($lPostStory);
 					// echo '</pre>';
 					// echo '<!-- show on homepage '.$q.'-->';
-					if( in_array('pisgah', $lPostStory) ) { 
+					if( in_array('middle', $lPostStory) ) { 
 						$q++;
 					echo '<!-- counter '.$q.'-->';
 					// $thumbId = get_post_thumbnail_id(); 

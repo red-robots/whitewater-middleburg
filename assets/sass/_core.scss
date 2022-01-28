@@ -5810,10 +5810,13 @@ body.single-instructions {
 			margin-bottom: 0;
 		}
 	}
-	.address, .map {
+	.address {
 		position: relative;
 		@include tab {
 			height: 50%;
+		}
+		&.right, &.right a {
+			color: #000;
 		}
 	}
 	.map {
@@ -5823,6 +5826,7 @@ body.single-instructions {
 		margin-bottom: 20px;
 		@include tab {
 			margin-bottom: 0;
+			height: 100%;
 		}
 		iframe {
 			width: calc(100% - 30px)!important;

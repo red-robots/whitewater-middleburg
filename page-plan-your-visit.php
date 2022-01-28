@@ -5,6 +5,7 @@
 
 get_header(); 
 $placeholder = THEMEURI . 'images/rectangle.png';
+$pID = get_the_ID();
 ?>
 
 <div id="primary" data-post="<?php echo get_the_ID()?>" class="content-area-full activities-parent">
@@ -24,7 +25,7 @@ $placeholder = THEMEURI . 'images/rectangle.png';
 			'posts_per_page'	=> -1,
 			'post_type'				=> $postype,
 			'post_status'			=> 'publish',
-			'post_parent' => 15
+			'post_parent' => $pID
 			// 'meta_query'			=> array(
 			// 			'relation' => 'OR',
 			// 			array(

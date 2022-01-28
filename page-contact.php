@@ -34,28 +34,29 @@ get_header(); ?>
 			if($contact_info || $contact_map || $contact_form) { ?>
 			<section class="section-contact-details <?php echo $contactWrap ?>">
 				<div class="inner-wrap">
-					<?php if ($contact_info || $contact_map) { ?>
+					<?php if ($contact_map) { ?>
 						<div class="leftcol">
-							<?php if ($contact_info) { ?>
-								<div class="address col">
-									<div class="inside">
-										<div class="wrap"><?php echo anti_email_spam($contact_info); ?></div>
-									</div>
-								</div>	
-							<?php } ?>
-
-							<?php if ($contact_map) { ?>
-								<div class="map col">
-									<?php echo $contact_map; ?>
-									<img src="<?php echo $placeholder ?>" alt="" aria-hidden="true" class="helper">
-								</div>	
-							<?php } ?>
+							<div class="map col">
+								<?php echo $contact_map; ?>
+								<img src="<?php echo $placeholder ?>" alt="" aria-hidden="true" class="helper">
+							</div>	
 						</div>
 					<?php } ?>
 
 					<?php if ($contact_form) { ?>
 					<div class="rightcol">
 						<div class="wrap">
+							<?php if ($contact_info) { ?>
+								<div class="">
+									<?php if ($contact_info) { ?>
+										<div class="address col right">
+											<div class="inside">
+												<div class="wrap"><?php echo anti_email_spam($contact_info); ?></div>
+											</div>
+										</div>	
+									<?php } ?>
+								</div>
+							<?php } ?>
 							<div class="contact-form"><?php echo anti_email_spam($contact_form); ?></div>
 						</div>
 					</div>
