@@ -77,7 +77,7 @@ if($postHeroImage) {
 
 	<header id="masthead" class="site-header" role="banner">
 		
-		<div id="topSearchBar" class="top-search-bar">
+		<!-- <div id="topSearchBar" class="top-search-bar">
 			<div class="wrapper">
 				<div class="form-wrapper">
 					<?php echo get_search_form(); ?>
@@ -85,7 +85,7 @@ if($postHeroImage) {
 					<a href="#" id="closeTopSearch"><span>Close</span></a>
 				</div>
 			</div>
-		</div>
+		</div> -->
 		<div class="navbar">
 			<div class="wrapper cf">
 				<?php if( get_custom_logo() ) { ?>
