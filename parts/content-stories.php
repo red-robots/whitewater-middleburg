@@ -92,15 +92,14 @@ $response = wp_remote_get( 'https://whitewater.org/wp-json/wp/v2/posts?per_page=
 
 <div id="load-post-div">
 	<div id="load-data-div">
-		<div class="filter-wrapper">
+		<!-- <div class="filter-wrapper">
 			<div class="wrapper">
 				
 				<div class="filter-inner">
-					<!-- <div class="filterbytxt" align="center">Filter By:</div> -->
 					<div class="flexwrap">
 
 						<?php if ( do_shortcode('[facetwp facet="activity_types"]') ) { ?>
-						<!-- <div class="select-wrap align-middle"> -->
+						
 						<div class="select-wrap">
 							<label for="activity_type">Activity</label>
 							<?php echo do_shortcode('[facetwp facet="activity_types" pager="true"]'); ?>
@@ -124,7 +123,7 @@ $response = wp_remote_get( 'https://whitewater.org/wp-json/wp/v2/posts?per_page=
 					/* Custom Filtering by Lisa */ 
 					//include( get_stylesheet_directory() . '/parts/filter-stories.php' ); ?>
 			</div>
-		</div>
+		</div> -->
 
 		<div class="archive-posts-wrap">
 			<div id="postLists" class="posts-inner countItems<?php echo $totalFound?>">
@@ -147,9 +146,9 @@ $response = wp_remote_get( 'https://whitewater.org/wp-json/wp/v2/posts?per_page=
 					$divclass .= ($i % 2) ? ' odd':' even';
 					$divclass .= ($i==1) ? ' first':'';
 					$catId = $post['category']['0'];
-					echo '<pre style="background-color: #fff;">';
-					print_r($post);
-					echo '<?pre>';
+					// echo '<pre style="background-color: #fff;">';
+					// print_r($post);
+					// echo '<?pre>';
 					include( get_stylesheet_directory() . '/parts/content-post-rest.php' );
 					?>
 				<?php
