@@ -2370,7 +2370,7 @@ body.single-instructions #primary #section-faqs{padding-top:60px;padding-bottom:
 .section-text-and-image .leftcol h2,.section-text-and-image .leftcol .coltitle{font-family:"Lato",sans-serif;font-weight:400;font-size:25px;line-height:1.2;text-transform:uppercase;letter-spacing:2px;margin:10px 0 15px}
 .section-text-and-image .leftcol .icon-col{text-align:center}
 .section-text-and-image .leftcol .icon-col span{display:inline-block;width:40px;height:40px;background-size:100%;background-position:center;background-repeat:no-repeat}
-.section-text-and-image .flexwrap{position:relative}
+.section-text-and-image .flexwrap{position:relative;width:100%}
 .section-text-and-image .rightcol.videoCol{width:100%;height:100%;float:left;overflow:hidden;position:relative;background:#000}
 .section-text-and-image .rightcol.videoCol .inside{max-width:1200px;width:100%;margin:0 auto}
 .section-text-and-image .rightcol.videoCol .iframe-wrap{width:100%;height:100%;position:absolute;top:0;left:0;z-index:5}
