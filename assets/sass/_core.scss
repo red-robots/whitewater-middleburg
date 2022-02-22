@@ -5651,6 +5651,11 @@ body.single-instructions {
 .section-text-and-image {
 	width: 100%;
 	float: left;
+	.clearr {
+		width: 100%;
+		clear: both;
+		height: 5px;
+	}
 	.leftcol, .rightcol {
 		width: 100%;
 		position: relative;
@@ -5702,15 +5707,26 @@ body.single-instructions {
 				margin: 0 auto;
 			}
 			.iframe-wrap {
-				width: 100%;
-				height: 100%;
-				position: absolute;
-				top: 0;
-				left: 0;
+				// width: 100%;
+				// height: 100%;
+				// position: absolute;
+				// top: 0;
+				// left: 0;
 				z-index: 5;
+
+				position: relative; 
+				padding-bottom: 56.25%; 
+				padding-top: 30px; 
+				height: 0; 
+				overflow: hidden; 
+				max-width: 100%; 
+				height: auto; 
 				iframe {
-					width: 100%!important;
-					height: 100%!important;
+					position: absolute; 
+					top: 0; 
+					left: 0; 
+					width: 100%; 
+					height: 100%;
 				}
 			}
 			img.placeholder {
@@ -5765,9 +5781,9 @@ body.single-instructions {
 			&.videoCol {
 				background: transparent;
 				@include mid {
-					position: absolute;
-					top: 0;
-					right: 0;
+					// position: absolute;
+					// top: 0;
+					// right: 0;
 				}
 				.inside {
 					width: 100%;

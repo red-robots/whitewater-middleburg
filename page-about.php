@@ -28,9 +28,9 @@ get_header(); ?>
 			?>
 			<?php if ($mission || $video) { ?>
 			<section class="section-text-and-image <?php echo $section_class ?>">
-				<div class="flexwrap">
+				<div class="flexwrapss">
 					<?php if ($mission) { ?>
-					<div class="leftcol">
+					<div class="leftcol  js-blocks">
 						<div class="wrap">
 							<div class="inner"><?php echo $mission; ?></div>
 						</div>
@@ -38,14 +38,16 @@ get_header(); ?>
 					<?php } ?>
 
 					<?php if ($video) { ?>
-					<div class="rightcol videoCol">
+					<div class="rightcol videoCol js-blocks">
 						<div class="inside">
-							<div class="iframe-wrap"><?php echo $video; ?></div>
-							<img src="<?php echo $placeholder ?>" alt="" aria-hidden="true" class="placeholder">
+							<?php echo $video; ?>
+							<!-- <div class="iframe-wrap"></div> -->
+							<!-- <img src="<?php echo $placeholder ?>" alt="" aria-hidden="true" class="placeholder"> -->
 						</div>
 					</div>	
 					<?php } ?>
 				</div>
+				<div class="clearr"></div>
 			</section>	
 			<?php } ?>
 
