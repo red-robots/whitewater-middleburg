@@ -45,6 +45,8 @@ jQuery(document).ready(function ($) {
 
 // $("select#diff").on("change", vali);
 
+
+
 $("select#diff").change(function() {
 	var diffResult = $(this).val();
 

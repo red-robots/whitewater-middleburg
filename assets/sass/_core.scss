@@ -5663,7 +5663,7 @@ body.single-instructions {
 	.leftcol {
 		background: $gray;
 		.wrap {
-			max-width: 1200px;
+			// max-width: 1200px;
 			width: 100%;
 			margin: 0 auto;
 			padding: 50px 20px;
@@ -5714,13 +5714,13 @@ body.single-instructions {
 				// left: 0;
 				z-index: 5;
 
-				position: relative; 
-				padding-bottom: 56.25%; 
-				padding-top: 30px; 
-				height: 0; 
-				overflow: hidden; 
-				max-width: 100%; 
-				height: auto; 
+				// position: relative; 
+				// padding-bottom: 56.25%; 
+				// padding-top: 30px; 
+				// height: 0; 
+				// overflow: hidden; 
+				// max-width: 100%; 
+				// height: auto; 
 				iframe {
 					position: absolute; 
 					top: 0; 
@@ -5794,11 +5794,39 @@ body.single-instructions {
 						height: 100%;
 					}
 				}
+				.iframe-wrap {
+					width: 100%;
+					iframe {
+						border: 0;
+	   					width: 100%;
+					}
+				}
 			}
 		}
 	}
 }
-
+[style*="--aspect-ratio"] > :first-child {
+  width: 100%;
+}
+[style*="--aspect-ratio"] > img {  
+  height: auto;
+} 
+@supports (--custom:property) {
+  [style*="--aspect-ratio"] {
+    position: relative;
+  }
+  [style*="--aspect-ratio"]::before {
+    content: "";
+    display: block;
+    padding-bottom: calc(100% / (var(--aspect-ratio)));
+  }  
+  [style*="--aspect-ratio"] > :first-child {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+  }  
+}
 .about-page {
 	.section-text-and-image {
 		// margin-bottom: 50px;
@@ -13501,4 +13529,16 @@ ul.items {
 }
 .sect-div-pad {
 	padding: 30px 0;
+}
+.swp_scode_btn{
+  text-align: center;
+  margin: 20px 0px;
+}
+.swp_scode_btn a{
+  color: #fff !important;
+  padding: 10px 30px
+}
+.swp_scode_btn a:hover{
+  text-decoration: none;
+  opacity:.50;
 }

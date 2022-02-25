@@ -30,7 +30,7 @@ get_header(); ?>
 			<section class="section-text-and-image <?php echo $section_class ?>">
 				<div class="flexwrapss">
 					<?php if ($mission) { ?>
-					<div class="leftcol  js-blocks">
+					<div class="leftcol  ">
 						<div class="wrap">
 							<div class="inner"><?php echo $mission; ?></div>
 						</div>
@@ -38,7 +38,7 @@ get_header(); ?>
 					<?php } ?>
 
 					<?php if ($video) { ?>
-					<div class="rightcol videoCol js-blocks">
+					<div class="rightcol videoCol ">
 						<div class="inside">
 							<?php echo $video; ?>
 							<!-- <div class="iframe-wrap"></div> -->
