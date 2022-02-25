@@ -7,7 +7,7 @@ $checkin_rows = array();
 $points_title = get_field("points_section_title");
 $sIcon = get_field("points_section_icon");
 // echo '<pre>';
-// print_r($sIcon);
+// print_r($cta);
 // echo '</pre>';
 $section4 = ($points_title) ? $points_title : 'Points of Interest';
 

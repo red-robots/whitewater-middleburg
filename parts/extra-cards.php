@@ -25,6 +25,10 @@ if ( have_rows('extra_cards') ) : ?>
 		$xtitle = get_sub_field('x_card_sect_title'); 
 		$content = get_sub_field('content');
 		$slides = get_sub_field("images");
+		$cta = get_sub_field("call_to_action");
+				// echo '<pre>';
+				// print_r($cta);
+				// echo '</pre>';
 		// $brands = get_field("brands");
 		$columnClass = ( $slides && ($content || $brands) ) ? 'half':'full';
 		$columnClass .= ($i % 2) ? ' odd':' even';
@@ -40,6 +44,13 @@ if ( have_rows('extra_cards') ) : ?>
 								<!-- <h2 class="stitle"><?php echo $title ?></h2> -->
 								<?php if ($content) { ?>
 									<?php echo $content; ?>
+								<?php } ?>
+								<?php if ($cta) { ?>
+									<div class="buttondiv">
+										<a href="<?php echo $cta['url']; ?>" target="<?php echo $cta['target']; ?>" class="btn-sm">
+											<span><?php echo $cta['title']; ?></span>
+										</a>
+									</div>
 								<?php } ?>
 							</div>
 						</div>
