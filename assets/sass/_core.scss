@@ -10208,11 +10208,19 @@ body.logged-in.admin-bar {
 
 #section-activities.section-content {
 	.entryList {
-		margin-left: -10px;
-		margin-right: -10px;
+		// margin-left: -10px;
+		// margin-right: -10px;
 	}
 }
-
+#section-activities,
+.featured-events-section {
+	padding-right: 10px;
+	padding-left: 10px;
+	@include tab() {
+		padding-right: 0;
+		padding-left: 0;
+	}
+}
 .activity-blocks {
 	.imagediv {
 		span.img {
