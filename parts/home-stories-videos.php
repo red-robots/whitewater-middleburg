@@ -74,7 +74,7 @@ $blank_image = THEMEURI . "images/rectangle.png";
 						$lPostStory[] = $lPost;
 					}
 					// echo '<pre style="background-color: #fff;">';
-					// print_r($lPostStory);
+					// print_r($post);
 					// echo '</pre>';
 					// echo '<!-- show on homepage '.$q.'-->';
 					if( in_array('middle', $lPostStory) ) { 
