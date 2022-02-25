@@ -12105,7 +12105,14 @@ body.page-template-page-food-beverage {
 		margin-top: 15px;
 	}
 }
-
+.imgwicon {
+	.btn-sm {
+		img {
+			margin-right: 10px;
+			max-width: 100px;
+		}
+	}
+}
 #primary.riverjam {
 	.gallerycol {
 		background-image:url('images/spinner.gif');
