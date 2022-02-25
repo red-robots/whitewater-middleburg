@@ -12110,6 +12110,8 @@ body.page-template-page-food-beverage {
 		img {
 			margin-right: 10px;
 			max-width: 100px;
+			position: relative;
+			z-index: 1000000;
 		}
 	}
 }
