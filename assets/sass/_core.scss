@@ -10216,9 +10216,11 @@ body.logged-in.admin-bar {
 .featured-events-section {
 	padding-right: 10px;
 	padding-left: 10px;
+	padding-top: 5px;
 	@include tab() {
 		padding-right: 0;
 		padding-left: 0;
+		// padding-top: 0;
 	}
 }
 .activity-blocks {
