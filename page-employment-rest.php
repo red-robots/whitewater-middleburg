@@ -37,7 +37,7 @@ endif;endif;
 
 		<?php get_template_part("parts/subpage-tabs"); ?>
 
-		<?php get_template_part("parts/content-available-jobs-rest") ?>
+		<?php get_template_part("parts/content-available-jobs-rest"); ?>
 
 		<?php
 			$icon1 = get_field("icon1");

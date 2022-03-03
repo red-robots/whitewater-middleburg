@@ -39,10 +39,6 @@ $count = 0;
 
             foreach ($body as $post) :
 
-            	// echo '<pre>';
-            	// print_r($post);
-            	// echo '</pre>';
-
             	if( $post['department']['0'] == '52' ) {
             		$Administration[] = $post;
             	} elseif( $post['department']['0'] == '55' ) {
@@ -77,9 +73,7 @@ $count = 0;
 			// echo $count;
 endif;endif;
 
-// echo '<pre>';
-// print_r($Administration);
-// echo '</pre>';
+
 
 	$defaultLocation = get_default_job_location();
 	$title4 = get_field("title4");
@@ -129,7 +123,7 @@ endif;endif;
 		'posts_per_page'	=> $per_page,
 		'post_type'				=> $postype,
 		'post_status'			=> 'publish',
-		'facetwp'					=> true
+		// 'facetwp'					=> true
 	);
 
 	if($tax_query) {
@@ -153,7 +147,7 @@ endif;endif;
 	}
 
 
-$posts = new WP_Query($args);
+//$posts = new WP_Query($args);
 //if( $posts->have_posts() ) { ?>
 	<section id="section4" data-section="<?php echo $title4 ?>" class="section-content entries-with-filter">
 		<div class="entries-inner wrapper text-center">
@@ -509,11 +503,12 @@ $posts = new WP_Query($args);
 								
 
 								<?php 
-								if( $posts->have_posts() ) {
-									$i=1; while ( $posts->have_posts()) : $posts->the_post(); ?>
+								//if( $posts->have_posts() ) {
+									//$i=1; while ( $posts->have_posts()) : $posts->the_post(); ?>
 										<!-- <div class="hide" style="display:none;"><?php echo get_the_title(); ?></div> -->
-									<?php $i++; endwhile; wp_reset_postdata(); 
-								} ?>
+									<?php //$i++; endwhile; 
+									wp_reset_postdata(); 
+								//} ?>
 							</div>
 						</div>
 					</div>
