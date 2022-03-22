@@ -138,6 +138,7 @@ endif;endif;
 					foreach($terms as $term) {
 						$term_id = $term->term_id;
 						$term_name = $term->name;
+						$desc = $term->description;
 						$postsByDepartment[$term_id]['department'] = $term_name;
 						$postsByDepartment[$term_id]['entries'][] = $e;
 					}

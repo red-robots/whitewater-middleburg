@@ -3576,6 +3576,7 @@ ul.items .show{display:block}
 .swp_scode_btn{text-align:center;margin:20px 0}
 .swp_scode_btn a{color:#fff !important;padding:10px 30px}
 .swp_scode_btn a:hover{text-decoration:none;opacity:.50}
+.tou{width:100%;background-color:#191919;color:rgba(255,255,255,0.7);float:left;padding:40px 0;font-size:12px;line-height:1.5}
 @media screen and (max-device-width:1024px){.featured-events-section{background-color:#FFF}
 .featured-events-section .flexwrap{-webkit-box-pack:start;-ms-flex-pack:start;justify-content:flex-start}
 .featured-events-section .postbox{width:50%;float:left}
