@@ -7164,6 +7164,13 @@ body.scrolled {
 			font-size: 35px;
 			line-height: 1;
 		}
+		&.extra-card-icon {
+			width: 30px;
+			margin: 0 auto 15px auto;
+			img {
+				width: 100%;
+			}
+		}
 	}
 }
 

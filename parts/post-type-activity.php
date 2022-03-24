@@ -93,6 +93,7 @@ while ( have_posts() ) : the_post();
 	<?php 
 	/* FLEXIBLE CONTENT */
 	$flex_section_title = get_field("flexcontent_section_title");
+	$a_c_section_icon = get_field("a_c_section_icon");
 	$flex_blocks = get_field("flexcontent_text_image");
 	$margin = ($flex_section_title) ? '':' nomtop';
 	if($flex_blocks) { ?>
@@ -102,6 +103,11 @@ while ( have_posts() ) : the_post();
 				<div class="wrapper">
 					<div class="shead-icon text-center">
 						<!-- <div class="icon"><span class="ci-calendar"></span></div> -->
+						<?php if( $a_c_section_icon ){ ?>
+							<div class="icon extra-card-icon">
+								<img src="<?php echo $a_c_section_icon['url']; ?>">
+							</div>
+						<?php } ?>
 						<h2 class="stitle"><?php echo $flex_section_title ?></h2>
 					</div>
 				</div>
@@ -617,7 +623,7 @@ while ( have_posts() ) : the_post();
 	</section>
 	<?php } ?>
 
-	<?php include(locate_template('parts/extra-cards.php')); ?>
+	<?php //include(locate_template('parts/extra-cards.php')); ?>
 
 	<?php /* FAQ */ ?>
 	<?php 
