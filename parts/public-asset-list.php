@@ -13,20 +13,22 @@ $args = array(
 	'posts_per_page'   	=> -1,
 	'post_type'        	=> $postype,
 	'post_status'      	=> 'publish',
-	'facetwp' 				 	=> true,
-	'meta_key' 					=> 'start_date',
-	'orderby'  					=> array(
-		'meta_value_num' 	=> 'DESC',
-		'post_date'      	=> 'DESC',
-	),
+	// 'facetwp' 				 	=> true,
+	// 'meta_key' 					=> 'start_date',
+	'orderby'  					=> 'menu_order',
+	'order' => 'ASC'
 );
 
 $finalList = array();
 $groupItems = array();
-$entries = new WP_Query($args); ?>
+$entries = new WP_Query($args); 
+	// echo '<pre>';
+	// print_r($entries);
+	// echo '</pre>';
+?>
 <?php if ( $entries->have_posts() ) {  ?>
 
-	<div class="filter-wrapper">
+	<!-- <div class="filter-wrapper">
 			<div class="wrapper">
 				
 				<div class="filter-inner">
@@ -49,7 +51,7 @@ $entries = new WP_Query($args); ?>
 				</div>
 
 			</div>
-	</div>
+	</div> -->
 
 	<div class="post-type-entries <?php echo $postype ?>">
 		<div id="data-container">
