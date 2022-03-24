@@ -44,9 +44,9 @@ $entries = new WP_Query($args);
 
 
 
-						<!-- <div id="resetBtn" class="select-reset-wrap <?php //echo ($has_filter) ? '':'hide'; ?>">
+						<div id="resetBtn" class="select-reset-wrap <?php //echo ($has_filter) ? '':'hide'; ?>">
 							<a href="<?php //echo get_permalink(); ?>" class="resetpage">Reset</a>
-						</div> -->
+						</div> 
 					</div>
 				</div>
 
