@@ -623,7 +623,7 @@ while ( have_posts() ) : the_post();
 	</section>
 	<?php } ?>
 
-	<?php //include(locate_template('parts/extra-cards.php')); ?>
+	<?php include(locate_template('parts/extra-cards.php')); ?>
 
 	<?php /* FAQ */ ?>
 	<?php 

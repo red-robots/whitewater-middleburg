@@ -35,7 +35,7 @@ if( have_rows('points_of_interest') ): ?>
 
 
 ?>
-
+ddafsdafdfdf
 <section id="points-of-interest-inside"  class="section-content<?php echo $checkin_classes;?> has-two-images">
 	<div class="wrapper-full">
 		<div class="flexwrap">
