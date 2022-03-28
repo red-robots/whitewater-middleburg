@@ -235,7 +235,8 @@ Reference: http://jsfiddle.net/BB3JK/47/
 
 	$('.zoom-image').fancybox({
 	  buttons : ['fullScreen','close'],
-	  hash : false
+	  hash : false,
+	  showNavArrows: true
 	});
 
 

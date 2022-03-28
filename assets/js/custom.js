@@ -211,7 +211,8 @@ jQuery(document).ready(function ($) {
   });
   $('.zoom-image').fancybox({
     buttons: ['fullScreen', 'close'],
-    hash: false
+    hash: false,
+    showNavArrows: true
   });
   var windowHeight = $(window).scrollTop();
 

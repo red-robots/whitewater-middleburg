@@ -22,13 +22,15 @@ if ( have_rows('extra_cards') ) : ?>
 			<?php } ?>
 		</div>
 	</div>
-	<?php $i=1; while ( have_rows('extra_cards') ) : the_row(); ?>
+	<?php $i=1; $iRel=1; while ( have_rows('extra_cards') ) : the_row(); ?>
 		<?php 
+		$iRel++;
 		$xtitle = get_sub_field('x_card_sect_title'); 
 		$content = get_sub_field('content');
 		$slides = get_sub_field("images");
 		$cta = get_sub_field("call_to_action");
 		$ctaIcon = get_sub_field("call_to_action_icon");
+		$rel = 'group-'.$iRel;
 				// echo '<pre>';
 				// print_r($cta);
 				// echo '</pre>';
@@ -70,7 +72,7 @@ if ( have_rows('extra_cards') ) : ?>
 									<?php $helper = THEMEURI . 'images/rectangle-narrow.png'; ?>
 									<?php foreach ($slides as $s) { ?>
 										<li class="slide-item" style="background-image:url('<?php echo $s['url']?>')">
-											<a href="<?php echo $s['url'] ?>" class="zoomPic zoom-image">
+											<a href="<?php echo $s['url'] ?>" class="zoomPic zoom-image" rel="<?php echo $rel; ?>">
 												<img src="<?php echo $helper ?>" alt="" aria-hidden="true" class="placeholder">
 											
 											<img src="<?php echo $s['url'] ?>" alt="<?php echo $s['title'] ?>" class="actual-image" />
