@@ -98,7 +98,7 @@ while ( have_posts() ) : the_post();
 					<ul class="slides">
 						<?php foreach ($galleries as $g) { ?>
 						<li class="sub-slide-item">
-							<a href="<?php echo $g['url'] ?>" class="zoomPic zoom-image">
+							<a href="<?php echo $g['url'] ?>" class="zoomPic zoom-image" data-fancybox="gallery">
 								<div class="slide-image" style="background-image:url('<?php echo $g['url']?>')">
 									<img src="<?php echo $placeholder ?>" alt="">
 								</div>
