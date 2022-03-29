@@ -3,7 +3,7 @@
 	$countActivities = count($bottom_activities);
 	$sTitle = get_field('popup_section_title');
 ?>
-<section id="section-activities" data-section="Programming" class="public-assets-section section-content camp-activities countItems<?php echo $countActivities?>">
+<section id="section-activities" data-section="<?php echo $sTitle; ?>" class="public-assets-section section-content camp-activities countItems<?php echo $countActivities?>">
 	<?php if( $sTitle ){ ?>
 	<div class="wrapper titlediv">
 		<div class="shead-icon text-center">
