@@ -72,7 +72,7 @@ if ( have_rows('extra_cards') ) : ?>
 									<?php $helper = THEMEURI . 'images/rectangle-narrow.png'; ?>
 									<?php foreach ($slides as $s) { ?>
 										<li class="slide-item" style="background-image:url('<?php echo $s['url']?>')">
-											<a href="<?php echo $s['url'] ?>" class="zoomPic zoom-image" rel="<?php echo $rel; ?>">
+											<a href="<?php echo $s['url'] ?>" class="zoomPic zoom-image" rel="<?php echo $rel; ?>" data-fancybox="gallery">
 												<img src="<?php echo $helper ?>" alt="" aria-hidden="true" class="placeholder">
 											
 											<img src="<?php echo $s['url'] ?>" alt="<?php echo $s['title'] ?>" class="actual-image" />

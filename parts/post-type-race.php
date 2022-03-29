@@ -358,20 +358,20 @@ while ( have_posts() ) : the_post(); ?>
 			if($courseImagesArrs) { ?>
 			<div class="course-images images-count-<?php echo $count_images?>">
 				<div class="inner">
-					<?php foreach ($ci_images as $c) { 
+					<?php $j=1; foreach ($ci_images as $c) { 
 						$img_field = ( isset($c[0]) && $c[0] ) ? $c[0] : '';
 						$img_width = ( isset($c[1]) && $c[1] ) ? $c[1] : '';
 						$img = ( isset($course_images[$img_field]) && $course_images[$img_field] ) ? $course_images[$img_field]:'';
 						$percent = ( isset($course_images[$img_width]) && $course_images[$img_width] ) ? $course_images[$img_width]:'50';
 						if($img) { ?>
 							<div class="img" style="width:<?php echo $percent?>%">
-								<a href="<?php echo $img['url'] ?>" class="zoomPic zoom-image">
+								<a href="<?php echo $img['url'] ?>" class="zoomPic zoom-image" rel="group_<?php echo $j?>" data-fancybox="gallery">
 									<div class="wrap" style="background-image:url('<?php echo $img['url'] ?>')">
 										<img src="<?php echo $img['url'] ?>" alt="<?php echo $img['title'] ?>" style="visibility:hidden"/>
 									</div>
 								</a>
 							</div>
-						<?php } ?>
+						<?php $j++; } ?>
 					<?php } ?>
 				</div>
 			</div>
