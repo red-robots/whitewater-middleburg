@@ -35,6 +35,7 @@ while ( have_posts() ) : the_post();
 		$purchase_link = get_field("purchase_link");
 		$reservation = get_field("reservation_data");
 
+
 		if ($purchase_link) { 
 			$btn_title = $purchase_link['title'];
 			$btn_link = $purchase_link['url'];
@@ -204,7 +205,7 @@ while ( have_posts() ) : the_post();
 		</section>
 	<?php } ?>
 
-	<?php  
+	<?php
 	/* OPTIONS */
 	$activities = get_field("activities");
 	$options_class = ($activities && $categories) ? 'half':'full';
@@ -321,7 +322,11 @@ while ( have_posts() ) : the_post();
 				</div>
 
 			</div>	
-			<?php } ?>
+			<?php } 
+			// echo '<pre>';
+			// print_r($reservation);
+			// echo '</pre>';
+					?>
 
 			<?php if ($categories || $reservation) { ?>
 			<div class="optcol categories passOptions">
@@ -370,6 +375,7 @@ while ( have_posts() ) : the_post();
 				<?php } ?>
 
 				<?php if ($reservation) {
+
 					$res_title =  ( isset($reservation['title']) && $reservation['title'] ) ? $reservation['title']:'';
 					$res_text =  (isset($reservation['text']) && $reservation['text']) ? $reservation['text']:'';
 					$res_button =  ( isset($reservation['button']) && $reservation['button'] ) ? $reservation['button']:'';

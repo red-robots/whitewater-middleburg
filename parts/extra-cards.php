@@ -11,7 +11,7 @@ if ( have_rows('extra_cards') ) : ?>
 				<img src="<?php echo $x_icon['url']; ?>">
 			</div>
 			
-			<h2 class="stitle"><?php //echo $x_sect_title; ?></h2>
+			<h2 class="stitle"><?php echo $x_sect_title; ?></h2>
 			<?php if ($stories_text) { ?>
 			<div class="subtext">
 				<?php echo $stories_text ?>
