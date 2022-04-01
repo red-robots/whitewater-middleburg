@@ -38,7 +38,8 @@ if ( have_rows('extra_cards') ) : ?>
 		$columnClass = ( $slides && ($content || $brands) ) ? 'half':'full';
 		$columnClass .= ($i % 2) ? ' odd':' even';
 		?>
-		<div id="entry<?php echo $i ?>" data-section="<?php echo $xtitle ?>" class="entry <?php echo $columnClass ?>">
+		<div  class="entry <?php echo $columnClass ?>">
+		<!-- <div id="entry<?php //echo $i ?>" data-section="<?php //echo $xtitle ?>" class="entry <?php echo $columnClass ?>"> -->
 			<div class="flexwrap wow fadeIn">
 				
 				<?php if ($content || $brands) { ?>
