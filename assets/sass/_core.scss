@@ -1368,6 +1368,7 @@ h2.stitle,
 }
 .buttondiv {
 	margin-top: 20px;
+	display: inline-block;
 }
 
 .btn-sm {
@@ -5524,6 +5525,7 @@ body.single-instructions {
 		}
 		.buttondiv {
 			margin-top: 25px;
+			display: inline-block;
 		}
 	}
 	.half {
@@ -7454,7 +7456,7 @@ body.single-accommodation {
 		line-height: 1.5;
 	}
 	.product-brands {
-		margin: 40px 0;
+		margin:  0px 0 20px 0;
 	}
 	.half {
 		.block.textcol {
@@ -13634,4 +13636,7 @@ ul.items {
 }
 .public-assets-section {
 	margin-bottom: 40px;
+}
+.clear {
+	clear: both;
 }

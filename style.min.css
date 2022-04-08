@@ -1745,7 +1745,7 @@ body.single-activity #subpageSlides,body.single-accommodation #subpageSlides{wid
 h2.stitle,.stitle{margin:0;text-transform:uppercase;font-family:"Lato",sans-serif;font-weight:400;font-size:25px;letter-spacing:2px;color:#000}
 .popbtn{width:100%;float:left;text-align:center}
 .popbtn .buttondiv{display:inline-block;margin-top:10px !important}
-.buttondiv{margin-top:20px}
+.buttondiv{margin-top:20px;display:inline-block}
 .btn-sm{cursor:pointer;display:inline-block;text-decoration:none !important;color:#5a5959;padding:7px 25px;border:1px solid #a2a2a2;overflow:hidden;position:relative;font-size:20px;font-weight:600;border-radius:0;-webkit-appearance:none;-webkit-box-shadow:none;box-shadow:none;min-width:85px}
 .btn-sm.popdata,.btn-sm.xs{padding:7px 15px 6px;font-size:15px;line-height:1.2}
 .btn-sm.wide{padding:7px 35px}
@@ -2346,7 +2346,7 @@ body.single-instructions #primary #section-faqs{padding-top:60px;padding-bottom:
 .text-and-image-blocks .textcol .inside,.menu-sections .textcol .inside{padding:5vw}
 .text-and-image-blocks .textcol .mstitle,.menu-sections .textcol .mstitle{font-family:"Lato",sans-serif;font-size:30px;font-weight:500;line-height:1.2;margin:0 0 15px;text-transform:uppercase}
 .text-and-image-blocks .textcol .mstime,.menu-sections .textcol .mstime{font-size:20px;font-weight:600;line-height:1.2}
-.text-and-image-blocks .textcol .buttondiv,.menu-sections .textcol .buttondiv{margin-top:25px}
+.text-and-image-blocks .textcol .buttondiv,.menu-sections .textcol .buttondiv{margin-top:25px;display:inline-block}
 .text-and-image-blocks .half.even,.menu-sections .half.even{-webkit-box-orient:horizontal;-webkit-box-direction:reverse;-ms-flex-direction:row-reverse;flex-direction:row-reverse}
 #flexible-content .text-and-image-blocks{margin-top:30px}
 .text-and-gallery{width:100%;float:left;margin-top:50px}
@@ -2626,7 +2626,7 @@ body.single-accommodation .flex-container.store-listings{margin-top:0}
 .store-listings .entry{width:100%;float:left;margin-bottom:15px}
 .store-listings .stitle{font-size:30px;margin:0 0 15px}
 .store-listings .text{font-size:16px;line-height:1.5}
-.store-listings .product-brands{margin:40px 0}
+.store-listings .product-brands{margin:0 0 20px 0}
 .store-listings .half .block.textcol{width:100%}
 .store-listings .half .block.textcol .inside{padding:40px 30px 20px;background:#f2f2f2}
 .store-listings .half .block.textcol .wrap{width:100%}
@@ -3588,6 +3588,7 @@ ul.items .show{display:block}
 .gform_body ul.gfield_checkbox li br{display:none}
 .gform_body ul.gfield_checkbox li input.gfield-choice-input,.gform_body ul.gfield_checkbox li input[type=checkbox]{margin-top:0 !important;margin-right:0}
 .public-assets-section{margin-bottom:40px}
+.clear{clear:both}
 @media screen and (max-device-width:1024px){.featured-events-section{background-color:#FFF}
 .featured-events-section .flexwrap{-webkit-box-pack:start;-ms-flex-pack:start;justify-content:flex-start}
 .featured-events-section .postbox{width:50%;float:left}
