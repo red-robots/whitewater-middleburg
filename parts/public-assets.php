@@ -2,15 +2,20 @@
 $sTitle = get_field('popup_section_title');
 
 $placeholder = THEMEURI . 'images/rectangle.png';
-$perpage = -1;
-$posttype = 'public_assets';
-$args = array(
-	'posts_per_page'   => $perpage,
-	'post_type'        => $posttype,
-	'post_status'      => 'publish'
-);
-$entries = new WP_Query($args); 
-if ( $entries->have_posts() ) { ?>
+
+$featured_posts = get_field('public_assets');
+// $perpage = -1;
+// $posttype = 'public_assets';
+// $args = array(
+// 	'posts_per_page'   => $perpage,
+// 	'post_type'        => $posttype,
+// 	'post_status'      => 'publish'
+// );
+// $entries = new WP_Query($args); 
+// if ( $entries->have_posts() ) { 
+if( $featured_posts ) {
+	?>
+}
 <section id="section-activities" data-section="<?php echo $sTitle; ?>" class="section-content flex-container store-listings full countItems<?php echo $countActivities?>">
 <section class="flex-container store-listings full">
 	<?php if( $sTitle ){ ?>
@@ -21,7 +26,11 @@ if ( $entries->have_posts() ) { ?>
 		</div>
 	</div>
 	<?php } ?>
-	<?php $i=1; while ( $entries->have_posts() ) : $entries->the_post(); ?>
+	<?php $i=1; 
+	//while ( $entries->have_posts() ) : $entries->the_post(); 
+	foreach( $featured_posts as $post ): 
+		setup_postdata($post);
+		?>
 		<?php 
 		$title = get_the_title(); 
 		$text = get_the_content();
@@ -101,7 +110,7 @@ if ( $entries->have_posts() ) { ?>
 
 			</div>
 		</div>
-	<?php $i++; endwhile; wp_reset_postdata(); ?>
+	<?php $i++; endforeach; wp_reset_postdata(); ?>
 </section>
 <?php } ?>
 
