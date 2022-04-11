@@ -58,6 +58,7 @@ if ( $entries->have_posts() ) { ?>
 								<?php if ($text) { ?>
 									<?php echo $text; ?>
 								<?php } ?>
+								<div class="clear"></div>
 								<?php foreach ($btns as $bbb) { 
 										// echo '<pre>';
 										// print_r($bbb);
