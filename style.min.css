@@ -2585,6 +2585,7 @@ body.scrolled.single-dining .post-hero-image .stats{position:fixed;z-index:50}
 body.scrolled.single-dining.logged-in.admin-bar .post-hero-image .stats{top:135px}
 body.scrolled .hero-register-button .registerBtn{position:fixed}
 .shead-icon{margin-bottom:35px}
+.shead-icon div.icon img{max-width:100%}
 .shead-icon div.icon span{font-size:35px;line-height:1}
 .shead-icon div.icon.extra-card-icon{width:30px;margin:0 auto 15px auto}
 .shead-icon div.icon.extra-card-icon img{width:100%}

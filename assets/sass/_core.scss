@@ -7190,6 +7190,9 @@ body.scrolled {
 .shead-icon {
 	margin-bottom: 35px;
 	div.icon {
+		img {
+			max-width: 100%;
+		}
 		span {
 			font-size: 35px;
 			line-height: 1;

@@ -117,6 +117,7 @@ while ( have_posts() ) : the_post();
 	<?php 
 	/* FLEXIBLE CONTENT */
 	$flex_section_title = get_field("flexcontent_section_title");
+	$acIcon = get_field('ac_icon');
 	$flex_blocks = get_field("flexcontent_text_image");
 	$margin = ($flex_section_title) ? '':' nomtop';
 	if($flex_blocks) { ?>
@@ -124,7 +125,10 @@ while ( have_posts() ) : the_post();
 			<?php if ($flex_section_title) { ?>
 			<div class="section-title-div">
 				<div class="wrapper">
-					<div class="shead-icon text-center">
+					<div class="shead-icon text-center svg-sec-icon">
+						<div class="icon">
+							<img src="<?php echo $acIcon['url']; ?>">
+						</div>
 						<!-- <div class="icon"><span class="ci-calendar"></span></div> -->
 						<h2 class="stitle"><?php echo $flex_section_title ?></h2>
 					</div>
