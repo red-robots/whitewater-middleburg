@@ -1,6 +1,6 @@
 <?php
 /**
- * Template Name: Adventure Dining
+ * Template Name: Bed & Breakfast
  */
 
 get_header(); 
@@ -24,7 +24,7 @@ $canceledImage = THEMEURI . "images/canceled.svg";
 
 	<?php  /* Adventure Dining posts */ ?>
 	<?php  
-		$postype = 'dining';
+		$postype = 'bed-and-breakfast';
 		$perpage = 4;
 		// $paged = ( get_query_var( 'pg' ) ) ? absint( get_query_var( 'pg' ) ) : 1;
 		// $args = array(
