@@ -121,6 +121,16 @@ function js_custom_init() {
         //     'supports'  => array('title','editor')
         // ),
         array(
+            'post_type' => 'bed-and-breakfast',
+            'menu_name' => 'Bed & Breakfast',
+            'plural'    => 'Bed & Breakfast',
+            'single'    => 'Bed & Breakfast',
+            'menu_icon' => 'dashicons-store',
+            
+            'rewrite'   => array('slug' => 'bed-and-breakfast'),
+            'supports'  => array('title','editor')
+        ),
+        array(
             'post_type' => 'brewery',
             'menu_name' => 'Breweries',
             'plural'    => 'Breweries',
