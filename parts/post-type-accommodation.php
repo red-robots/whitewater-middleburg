@@ -1,6 +1,7 @@
 <?php 
 $postid = get_the_ID();
 while ( have_posts() ) : the_post(); 
+	$rates = get_field('rates_pop');
 	$top_notification = get_field("top_notification");
 	$main_description = get_field("accommodation_descr");
 	$taxonomy = 'pass_type';
@@ -46,6 +47,11 @@ while ( have_posts() ) : the_post();
 				<div class="button text-center">
 					<a href="<?php echo $btn_link ?>" class="btn-border"<?php echo $target ?>>
 						<span><?php echo $btn_title ?></span>
+					</a>
+				</div>	
+				<div class="button text-center">
+					<a href="#rates" class="btn-border"id="inline">
+						<span>View Rates</span>
 					</a>
 				</div>	
 			</section>
@@ -668,6 +674,9 @@ while ( have_posts() ) : the_post();
 	<?php /* Featured Articles */ ?>
 	<?php get_template_part("parts/bottom-content-activity"); ?>
 
+	<?php /* Featured Articles */ ?>
+	<?php include(locate_template('parts/reviews.php'));  ?>
+
 	<?php
 	/* FAQS JAVASCRIPT */ 
 	include( locate_template('inc/faqs-script.php') ); 
@@ -686,6 +695,14 @@ while ( have_posts() ) : the_post();
 	    </div>
 	  </div>
 	</div>
+
+
+<div style="display: none;">
+	<div id="rates">
+		<?php echo do_shortcode("$rates"); ?>
+	</div>
+</div>
+
 
 	<script type="text/javascript">
 jQuery(document).ready(function($){

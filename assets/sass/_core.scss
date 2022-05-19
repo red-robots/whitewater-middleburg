@@ -14242,3 +14242,26 @@ input.nav-search {
 		repeat: no-repeat;
 	}
 }
+section.the-reviews {
+	padding: 40px 0;
+	width: 100%;
+	float: left;
+	.review {
+		border: 1px solid #ccc;
+		padding: 30px;
+		text-align: center;
+		background-color: #fff;
+		box-shadow: -5px 6px 18px -4px rgba(0,0,0,0.3);
+-webkit-box-shadow: -5px 6px 18px -4px rgba(0,0,0,0.3);
+-moz-box-shadow: -5px 6px 18px -4px rgba(0,0,0,0.3);
+	}
+	.star {
+		width: 25px;
+		height: 25px;
+		display: inline-block;
+		background-image: url(images/star.png);
+		margin: 2px;
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+}

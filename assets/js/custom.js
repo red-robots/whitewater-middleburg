@@ -214,6 +214,15 @@ jQuery(document).ready(function ($) {
     hash: false,
     showNavArrows: true
   });
+  $("a#inline").fancybox({
+    'hideOnContentClick': true
+  });
+  $('.reviews').flexslider({
+    animation: "slide",
+    animationLoop: false,
+    itemWidth: 300,
+    itemMargin: 5
+  });
   var windowHeight = $(window).scrollTop();
 
   if (windowHeight > 200) {
