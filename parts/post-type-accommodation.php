@@ -2,6 +2,8 @@
 $postid = get_the_ID();
 while ( have_posts() ) : the_post(); 
 	$rates = get_field('rates_pop');
+	$ratesTitle = get_field('pop_title');
+	$ratesDesc = get_field('pop_desc');
 	$top_notification = get_field("top_notification");
 	$main_description = get_field("accommodation_descr");
 	$taxonomy = 'pass_type';
@@ -36,6 +38,8 @@ while ( have_posts() ) : the_post();
 		$purchase_link = get_field("purchase_link");
 		$reservation = get_field("reservation_data");
 
+		$rando_link = get_field('rando_link');
+
 
 		if ($purchase_link) { 
 			$btn_title = $purchase_link['title'];
@@ -50,10 +54,17 @@ while ( have_posts() ) : the_post();
 					</a>
 				</div>	
 				<div class="button text-center">
-					<a href="#rates" class="btn-border"id="inline">
+					<a href="#rates" class="btn-border" id="inline">
 						<span>View Rates</span>
 					</a>
 				</div>	
+				<?php if( $rando_link ) { ?>
+					<div class="button text-center">
+						<a href="<?php echo $rando_link['url']; ?>" class="btn-border" >
+							<span><?php echo $rando_link['title']; ?></span>
+						</a>
+					</div>
+				<?php } ?>
 			</section>
 	<?php } ?>
 
@@ -671,11 +682,13 @@ while ( have_posts() ) : the_post();
 		include( locate_template('parts/content-faqs.php') ); 
 	?>
 
+	<?php /* House Reviews */ ?>
+	<?php include(locate_template('parts/reviews.php'));  ?>
+
 	<?php /* Featured Articles */ ?>
 	<?php get_template_part("parts/bottom-content-activity"); ?>
 
-	<?php /* Featured Articles */ ?>
-	<?php include(locate_template('parts/reviews.php'));  ?>
+	
 
 	<?php
 	/* FAQS JAVASCRIPT */ 
@@ -699,7 +712,15 @@ while ( have_posts() ) : the_post();
 
 <div style="display: none;">
 	<div id="rates">
-		<?php echo do_shortcode("$rates"); ?>
+		<div class="rates-box">
+			<?php if($ratesTitle) { ?>
+				<h3><?php echo $ratesTitle; ?></h3>
+			<?php } ?>
+			<?php if($ratesDesc) { ?>
+				<p><?php echo $ratesDesc; ?></p>
+			<?php } ?>
+			<?php echo do_shortcode("$rates"); ?>
+		</div>
 	</div>
 </div>
 

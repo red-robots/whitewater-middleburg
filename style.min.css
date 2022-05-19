@@ -1252,6 +1252,7 @@ html[xmlns] .flexslider .slides{display:block}
 .flex-pauseplay a:hover{opacity:1}
 .flex-pauseplay a .flex-play:before{content:'\f003'}
 .flex-control-nav{width:100%;position:absolute;bottom:20px;text-align:center;z-index:2}
+.reviews .flex-control-nav{bottom:-40px}
 .flex-control-nav li{margin:0 6px;display:inline-block;zoom:1;*display:inline}
 .flex-control-paging li a{width:11px;height:11px;display:block;background:#666;background:rgba(0,0,0,0.5);cursor:pointer;text-indent:-9999px;-webkit-box-shadow:inset 0 0 3px rgba(0,0,0,0.3);-o-box-shadow:inset 0 0 3px rgba(0,0,0,0.3);box-shadow:inset 0 0 3px rgba(0,0,0,0.3);border-radius:20px}
 .flex-control-paging li a:hover{background:#333;background:rgba(0,0,0,0.7)}
@@ -3465,7 +3466,7 @@ body.page-template-page-race .post-type-entries .flex-inner.countItems1,body.pag
 .modal.customModal#additionEventInfo .modalText h5{font-size:14px}
 section.accomm-purchase{width:100%;float:left;margin:20px auto 60px auto;text-align:center}
 section.accomm-purchase .button{display:inline-block;color:#fff;background-color:#ba0c2f}
-section.accomm-purchase .button a{color:#fff;background-color:#ba0c2f;-webkit-transform:scale(1);transform:scale(1);padding:20px 30px;-webkit-transition:all ease .2s;transition:all ease .2s;text-transform:uppercase;font-size:18px;border:0}
+section.accomm-purchase .button a{color:#fff;background-color:#ba0c2f;-webkit-transform:scale(1);transform:scale(1);padding:10px 15px;-webkit-transition:all ease .2s;transition:all ease .2s;text-transform:uppercase;font-size:18px;border:0}
 section.accomm-purchase .button a:hover{-webkit-transform:scale(1.05);transform:scale(1.05);text-decoration:none}
 .accomodations{width:100%;float:left;margin-top:30px;margin-bottom:30px}
 .accomodations.nopadtop{margin-top:-20px}
@@ -3659,8 +3660,12 @@ body.search .page-header a{color:#000}
 input.nav-search{width:100%;border:0;height:30px;border-radius:15px;background-color:rgba(255,255,255,0.6);padding:0 10px;margin:10px 0 0 0;background-image:url(images/eyeglass.png);background-position:right 10px top 5px;background-repeat:no-repeat}
 section.the-reviews{padding:40px 0;width:100%;float:left}
 section.the-reviews .flex-viewport{padding:20px}
-section.the-reviews .review{border:1px solid #ccc;padding:30px;text-align:center;background-color:#fff;-webkit-box-shadow:0 3px 19px -2px rgba(0,0,0,0.22);box-shadow:0 3px 19px -2px rgba(0,0,0,0.22)}
+section.the-reviews .rev-cont{width:100%;float:left;margin-top:40px}
+section.the-reviews .review{border:1px solid #ccc;padding:30px;text-align:center;background-color:#fff;-webkit-box-shadow:0 3px 19px -2px rgba(0,0,0,0.22);box-shadow:0 3px 19px -2px rgba(0,0,0,0.22);max-height:400px;overflow:hidden;position:relative;-webkit-transition:all ease .5s;transition:all ease .5s}
+section.the-reviews .review.open{max-height:2000px;padding:30px 30px 60px 30px}
 section.the-reviews .star{width:25px;height:25px;display:inline-block;background-image:url(images/star.png);margin:2px;background-repeat:no-repeat;background-size:cover}
+section.the-reviews .read-review{width:100%;position:absolute;bottom:0;left:0;text-align:center;cursor:pointer;padding:10px 0;background-color:rgba(255,255,255,0.9);color:#ba0d30}
+.rates-box{max-width:500px;margin:0 auto}
 @media screen and (max-device-width:1024px){.featured-events-section{background-color:#FFF}
 .featured-events-section .flexwrap{-webkit-box-pack:start;-ms-flex-pack:start;justify-content:flex-start}
 .featured-events-section .postbox{width:50%;float:left}
@@ -4025,6 +4030,7 @@ section.route-map .map-frame{height:60vh}
 .information-tabs-wrap .tabs-info ul a span.arrow:before,.information-tabs-wrap .tabs-info ul a span.arrow:after{top:14px}
 #banner .static-banner .slides .videoIframeDiv .playVidBtn,#banner .flexslider .slides .videoIframeDiv .playVidBtn{width:130px;height:130px}
 #section-awards .col-content.col-count-2 .result-data{width:50%;margin-top:0}
+section.accomm-purchase .button a{padding:20px 30px}
 .team-staff-section .photo{width:25%}
 .team-staff-section .bio{width:75%}
 #timeline-area .horizontal-timeline .events-wrapper{max-width:1000px}
