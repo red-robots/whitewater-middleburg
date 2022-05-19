@@ -221,7 +221,7 @@ jQuery(document).ready(function ($) {
     animation: "slide",
     animationLoop: false,
     itemWidth: 300,
-    itemMargin: 5
+    itemMargin: 25
   });
   var windowHeight = $(window).scrollTop();
 

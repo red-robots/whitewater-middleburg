@@ -247,7 +247,7 @@ Reference: http://jsfiddle.net/BB3JK/47/
 	    animation: "slide",
 	    animationLoop: false,
 	    itemWidth: 300,
-	    itemMargin: 5
+	    itemMargin: 25
 	  });
 
 
