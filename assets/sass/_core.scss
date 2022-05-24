@@ -13712,6 +13712,7 @@ ul.items {
 		text-align: center;
 		position: relative;
 		z-index: 15;
+		font-size: 40px;
 	}
 	.horizontal-timeline {
 		.events-wrapper {
@@ -13978,6 +13979,9 @@ ul.items {
 			line-height: 1;
 			color: #565554;
 			margin-bottom: 10px;
+			@include tab {
+				width: 62%;
+			}
     }
     .h-text {
 			width: 100%;
@@ -14044,8 +14048,8 @@ ul.items {
 	    		@include tab {
 	    			margin-top: 0;
 	    			width: 35%;
-            position: absolute;
-            top: 0;
+            		position: absolute;
+            		top: 0;
 	    		}
 	    		img {
 	    			width: 100%;

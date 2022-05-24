@@ -3596,7 +3596,7 @@ ul.items .show{display:block}
 #timeline-area:before{content:"";display:block;width:100%;height:100%;position:absolute;top:0;left:0;opacity:.9;z-index:3}
 #timeline-area .imagebg{width:100%;height:100%;position:absolute;top:0;left:0;background-size:cover;background-position:center;background-repeat:no-repeat;-webkit-filter:grayscale(1);filter:grayscale(1)}
 #timeline-area .wrapper{z-index:10}
-#timeline-area .col-title{text-align:center;position:relative;z-index:15}
+#timeline-area .col-title{text-align:center;position:relative;z-index:15;font-size:40px}
 #timeline-area .horizontal-timeline .events-wrapper{max-width:92%;height:100px;margin:0 auto}
 #timeline-area .horizontal-timeline .events{bottom:80px;height:2px;margin-left:10px;background:#ba0d30}
 #timeline-area .horizontal-timeline .filling-line{background-color:#ba0d30}
@@ -3981,6 +3981,7 @@ body.single-festival .filter-wrapper.filterstyle .select-wrap{width:75%}
 #timeline-area.timeline-wrapper .timeline{padding-top:100px;padding-bottom:100px}
 #timeline-area.timeline-wrapper .timeline .history{width:50%;margin-bottom:0;min-height:150px}
 #timeline-area.timeline-wrapper .timeline .history.hasimage{min-height:250px}
+#timeline-area.timeline-wrapper .timeline .history .h-title{width:62%}
 #timeline-area.timeline-wrapper .timeline .history .h-text{border-top:4px dotted #8c8c8c;padding-top:10px}
 #timeline-area.timeline-wrapper .timeline .history .h-text .photo{right:0;-webkit-transform:translateY(-65px);transform:translateY(-65px)}
 #timeline-area.timeline-wrapper .timeline .history .h-text.half .text{width:60%;padding-right:20px}
