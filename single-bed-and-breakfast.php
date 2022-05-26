@@ -148,6 +148,7 @@ $status_custom_message = get_field("status_custom_message");
 				</section>
 				<?php } ?>	
 
+				<?php include('parts/flexible-content.php'); ?>
 
 				<?php  
 				/* MAP */
