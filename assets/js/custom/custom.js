@@ -239,9 +239,9 @@ Reference: http://jsfiddle.net/BB3JK/47/
 	  showNavArrows: true
 	});
 
-	// $("a#inline").fancybox({
-	// 	'hideOnContentClick': true
-	// });
+	$("a#inline").fancybox({
+		'hideOnContentClick': true
+	});
 
 	 // $('.reviews').flexslider({
 	 //    animation: "slide",

@@ -3664,7 +3664,7 @@ section.the-reviews .review{border:1px solid #ccc;padding:30px;text-align:center
 section.the-reviews .review.open{max-height:2000px;padding:30px 30px 60px 30px}
 section.the-reviews .star{width:25px;height:25px;display:inline-block;background-image:url(images/star.png);margin:2px;background-repeat:no-repeat;background-size:cover}
 section.the-reviews .read-review{width:100%;position:absolute;bottom:0;left:0;text-align:center;cursor:pointer;padding:10px 0;background-color:rgba(255,255,255,0.9);color:#ba0d30}
-.rates-box{max-width:500px;margin:0 auto}
+.rates-box{max-width:500px;margin:0 auto;text-align:center}
 @media screen and (max-device-width:1024px){.featured-events-section{background-color:#FFF}
 .featured-events-section .flexwrap{-webkit-box-pack:start;-ms-flex-pack:start;justify-content:flex-start}
 .featured-events-section .postbox{width:50%;float:left}

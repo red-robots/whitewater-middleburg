@@ -213,10 +213,10 @@ jQuery(document).ready(function ($) {
     buttons: ['fullScreen', 'close'],
     hash: false,
     showNavArrows: true
-  }); // $("a#inline").fancybox({
-  // 	'hideOnContentClick': true
-  // });
-  // $('.reviews').flexslider({
+  });
+  $("a#inline").fancybox({
+    'hideOnContentClick': true
+  }); // $('.reviews').flexslider({
   //    animation: "slide",
   //    animationLoop: false,
   //    itemWidth: 300,
