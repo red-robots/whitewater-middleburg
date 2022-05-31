@@ -139,7 +139,7 @@ while ( have_posts() ) : the_post();
 	</section>	
 	<?php } ?>
 
-	<?php include('parts/flexible-content.php'); ?>
+	<?php include(locate_template('parts/flexible-content.php')); ?>
 
 	<?php
 	/* OPTIONS */
@@ -581,6 +581,8 @@ while ( have_posts() ) : the_post();
 	<?php include(locate_template('parts/extra-cards.php')); ?>
 
 	<?php include(locate_template('parts/public-assets.php')); ?>
+
+	<?php //include(locate_template('parts/additional-content.php')); ?>
 
 	<?php /* FAQ */ ?>
 	<?php 
