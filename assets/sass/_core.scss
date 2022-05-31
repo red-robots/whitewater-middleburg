@@ -129,7 +129,7 @@ a {
 	top: 0;
 	left: 0;
 	width: 100%;
-	z-index: 200;
+	z-index: 1000;
 	.navbar {
 		padding-top: 0;
 		padding-bottom: 0;
@@ -756,6 +756,7 @@ body.scrolled .navbar {
 	position: relative;
 	top: -2px;
 	transition: all ease .3s;
+	z-index: 1000;
 	span.bar {
 		width: 25px;
 		top: 50%;
@@ -9557,7 +9558,7 @@ body.logged-in.admin-bar {
 	}
 	.faq {
 		display: block;
-		width: 50%;
+		width: 100%;
 		text-align: center;
 		padding: 30px 20px;
 		color: $dark;
@@ -14312,4 +14313,10 @@ section.the-reviews {
 	max-width: 500px;
 	margin: 0 auto;
 	text-align: center;
+}
+.tribe-events-header__events-bar {
+	display: none !important;
+}
+.tribe-common-l-container {
+	padding-top: 0 !important;
 }

@@ -1566,7 +1566,7 @@ a:hover{color:#dd8698}
 .site{position:relative;overflow-x:hidden;overflow-y:auto}
 .flexwrap{display:-webkit-box;display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row}
 .title3{font-family:"Lato",sans-serif;font-size:18px;font-weight:400;line-height:1.2;color:#707070;margin:0 0 8px;letter-spacing:1px;text-transform:uppercase}
-.site-header{position:fixed;top:0;left:0;width:100%;z-index:200}
+.site-header{position:fixed;top:0;left:0;width:100%;z-index:1000}
 .site-header .navbar{padding-top:0;padding-bottom:0}
 .topbar{width:100%;height:30px;float:left;background:#000;position:fixed;top:0;left:0;z-index:99995}
 .topinfo{display:block;width:100%;color:#FFF;position:relative;display:-webkit-box;display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center}
@@ -1659,7 +1659,7 @@ body.scrolled .navbar{background:rgba(255,255,255,0.95)}
 .closeNav span:after{-webkit-transform:rotate(-45deg);transform:rotate(-45deg)}
 .closeNav:hover{background:#950a26}
 .closeNav:hover span:before,.closeNav:hover span:after{background:#FFF !important}
-.menu-toggle{display:block;width:40px;height:40px;float:right;background:transparent;-webkit-appearance:none;border:0;-webkit-box-shadow:none;box-shadow:none;padding:10px;position:relative;top:-2px;-webkit-transition:all ease .3s;transition:all ease .3s}
+.menu-toggle{display:block;width:40px;height:40px;float:right;background:transparent;-webkit-appearance:none;border:0;-webkit-box-shadow:none;box-shadow:none;padding:10px;position:relative;top:-2px;-webkit-transition:all ease .3s;transition:all ease .3s;z-index:1000}
 .menu-toggle span.bar{width:25px;top:50%;-webkit-transform:translateY(-50%);transform:translateY(-50%);left:8px}
 .menu-toggle span.bar,.menu-toggle span.bar:before,.menu-toggle span.bar:after{height:4px;background:#000;position:absolute;border-radius:2px}
 .menu-toggle span.bar:before,.menu-toggle span.bar:after{content:"";display:block;width:100%;top:0;left:0}
@@ -2947,7 +2947,7 @@ body.logged-in.admin-bar .job-info-page .text-centered-section{margin-top:-5px}
 .main-faqs-icons{background:#f2f2f2}
 .main-faqs-icons .flexwrap{-webkit-box-align:center;-ms-flex-align:center;align-items:center;-ms-flex-line-pack:center;align-content:center}
 .main-faqs-icons .wrapper{padding-top:40px;padding-bottom:40px}
-.main-faqs-icons .faq{display:block;width:50%;text-align:center;padding:30px 20px;color:#191919;text-decoration:none}
+.main-faqs-icons .faq{display:block;width:100%;text-align:center;padding:30px 20px;color:#191919;text-decoration:none}
 .main-faqs-icons .faq .icon,.main-faqs-icons .faq .title{display:block;width:100%}
 .main-faqs-icons .faq .icon{font-size:30px;line-height:1}
 .main-faqs-icons .faq .title{font-family:"Lato",sans-serif;font-size:18px;line-height:1.2;text-transform:uppercase;letter-spacing:1px}
@@ -3665,6 +3665,8 @@ section.the-reviews .review.open{max-height:2000px;padding:30px 30px 60px 30px}
 section.the-reviews .star{width:25px;height:25px;display:inline-block;background-image:url(images/star.png);margin:2px;background-repeat:no-repeat;background-size:cover}
 section.the-reviews .read-review{width:100%;position:absolute;bottom:0;left:0;text-align:center;cursor:pointer;padding:10px 0;background-color:rgba(255,255,255,0.9);color:#ba0d30}
 .rates-box{max-width:500px;margin:0 auto;text-align:center}
+.tribe-events-header__events-bar{display:none !important}
+.tribe-common-l-container{padding-top:0 !important}
 @media screen and (max-device-width:1024px){.featured-events-section{background-color:#FFF}
 .featured-events-section .flexwrap{-webkit-box-pack:start;-ms-flex-pack:start;justify-content:flex-start}
 .featured-events-section .postbox{width:50%;float:left}
