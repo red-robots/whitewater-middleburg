@@ -592,7 +592,7 @@ while ( have_posts() ) : the_post();
 	?>
 
 	<?php /* House Reviews */ ?>
-	<?php include(locate_template('parts/reviews.php'));  ?>
+	<?php //include(locate_template('parts/reviews.php'));  ?>
 
 	<?php /* Featured Articles */ ?>
 	<?php get_template_part("parts/bottom-content-activity"); ?>
