@@ -69,7 +69,7 @@ if( is_faqs_visible() ) {
 
 					<div class="faqsItems">
 						<?php 
-						$faq_pageId = 157;
+						$faq_pageId = 430;
 						$max = 3;
 						$totalFaqs = count($faqLists);
 						$faq_ids = array();
