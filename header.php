@@ -43,6 +43,15 @@ var params={};location.search.replace(/[?&]+([^=&]+)=([^&]*)/gi,function(s,k,v){
 
   gtag('config', 'G-9PW6PHW0M8');
 </script> -->
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-9PW6PHW0M8"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-9PW6PHW0M8');
+</script>
 <?php wp_head(); ?>
 </head>
 <?php

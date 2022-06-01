@@ -37,7 +37,7 @@ while ( have_posts() ) : the_post();
 	<?php 
 		$purchase_link = get_field("purchase_link");
 		$reservation = get_field("reservation_data");
-
+		$btnGroup = get_field('pop_link');
 		$rando_link = get_field('rando_link');
 
 
@@ -53,11 +53,13 @@ while ( have_posts() ) : the_post();
 						<span><?php echo $btn_title ?></span>
 					</a>
 				</div>	
-				<div class="button text-center">
-					<a href="#rates" class="btn-border" id="inline">
-						<span>View Rates</span>
-					</a>
-				</div>	
+				<?php if($btnGroup == 'popup' && $rate != '') { ?>
+					<div class="button text-center">
+						<a href="#rates" class="btn-border" id="inline">
+							<span>View Rates</span>
+						</a>
+					</div>	
+				<?php } ?>
 				<?php if( $rando_link ) { ?>
 					<div class="button text-center">
 						<a href="<?php echo $rando_link['url']; ?>" class="btn-border" >
