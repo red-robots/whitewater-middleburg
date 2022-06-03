@@ -3667,6 +3667,9 @@ section.the-reviews .read-review{width:100%;position:absolute;bottom:0;left:0;te
 .rates-box{max-width:500px;margin:0 auto;text-align:center}
 .tribe-events-header__events-bar{display:none !important}
 .tribe-common-l-container{padding-top:0 !important}
+h1.tribe-events-single-event-title{text-align:center;width:100%}
+#tribe-events-content a{color:#ba0d30}
+#tribe-events-content ul.tribe-events-sub-nav a{color:#fff}
 @media screen and (max-device-width:1024px){.featured-events-section{background-color:#FFF}
 .featured-events-section .flexwrap{-webkit-box-pack:start;-ms-flex-pack:start;justify-content:flex-start}
 .featured-events-section .postbox{width:50%;float:left}

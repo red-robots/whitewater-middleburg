@@ -14323,3 +14323,15 @@ section.the-reviews {
 .tribe-common-l-container {
 	padding-top: 0 !important;
 }
+h1.tribe-events-single-event-title {
+	text-align: center;
+	width: 100%;
+}
+#tribe-events-content {
+	a {
+		color: $red;
+	}
+	ul.tribe-events-sub-nav a {
+		color: #fff;
+	}
+}
