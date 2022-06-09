@@ -1672,6 +1672,7 @@ body.nav-open .menu-toggle{opacity:0}
 #banner a{width:100%;height:100%;position:absolute;top:0;left:0;z-index:998}
 #banner.video-playing{z-index:300}
 #banner .logo-overlay{position:absolute;top:40%;left:0;right:0;margin-left:auto;margin-right:auto;width:200px;z-index:10}
+#banner .logo-overlay img{width:100%}
 #banner .static-banner,#banner .flexslider{border-radius:0}
 #banner .static-banner .slides .iframe-wrapper,#banner .flexslider .slides .iframe-wrapper{padding:0;position:relative;width:100%}
 #banner .static-banner .slides .iframe-wrapper video,#banner .flexslider .slides .iframe-wrapper video{width:100%}
