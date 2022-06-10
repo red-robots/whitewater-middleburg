@@ -8108,9 +8108,11 @@ body.pageNoBanner {
 	}
 	.fbox {
 		width: 100%;
+		margin-bottom: 20px;
 		@include tab {
 			width: 33.33%;
 			padding: 8px;
+			margin: 0;
 		}
 		&.fullwidthbox {
 			width: 100%!important;
