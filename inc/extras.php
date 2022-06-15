@@ -15,6 +15,16 @@
  */
 define('THEMEURI',get_template_directory_uri() . '/');
 
+add_filter(
+  'tribe_events_views_v2_view_list_repository_args',
+  function ( $args ) {
+    $args['orderby'] = 'title';
+    $args['order'] = 'ASC';
+ 
+    return $args;
+  }
+);
+
 function custom_mime_types( $mimes ) { 
     // Add new MIME types here
     $mimes['kml'] = 'application/vnd.google-earth.kml+xml';
