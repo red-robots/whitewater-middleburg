@@ -28,7 +28,7 @@ if ( have_rows('extra_cards') ) : ?>
 		$xtitle = get_sub_field('x_card_sect_title'); 
 		$content = get_sub_field('content');
 		$slides = get_sub_field("images");
-		$cta = get_sub_field("call_to_action");
+		$cta = get_sub_field("calls_to_action");
 		$ctaIcon = get_sub_field("call_to_action_icon");
 		$rel = 'group-'.$iRel;
 				// echo '<pre>';
@@ -52,12 +52,16 @@ if ( have_rows('extra_cards') ) : ?>
 									<?php echo $content; ?>
 								<?php } ?>
 								<?php if ($cta) { ?>
+									<?php foreach ($cta as $ctab) {
+										
+									?>
 									<div class="buttondiv imgwicon">
-										<a href="<?php echo $cta['url']; ?>" target="<?php echo $cta['target']; ?>" class="btn-sm">
+										<a href="<?php echo $ctab['call_to_action']['url']; ?>" target="<?php echo $ctab['call_to_action']['target']; ?>" class="btn-sm">
 											<?php if($ctaIcon){ ?><img src="<?php echo $ctaIcon['url']; ?>"><?php } ?>
-											<span><?php echo $cta['title']; ?></span>
+											<span><?php echo $ctab['call_to_action']['title']; ?></span>
 										</a>
 									</div>
+								<?php } ?>
 								<?php } ?>
 							</div>
 						</div>
