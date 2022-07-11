@@ -53,7 +53,7 @@ while ( have_posts() ) : the_post();
 						<span><?php echo $btn_title ?></span>
 					</a>
 				</div>	
-				<?php if($btnGroup == 'popup' && $rate != '') { ?>
+				<?php if($btnGroup == 'popup' && $rates != '') { ?>
 					<div class="button text-center">
 						<a href="#rates" class="btn-border" id="inline">
 							<span>View Rates</span>
@@ -580,7 +580,9 @@ while ( have_posts() ) : the_post();
 	</section>
 	<?php } ?>
 
-	<?php include(locate_template('parts/extra-cards.php')); ?>
+	<?php 
+	/* This is actuall Points of Interest */
+	include(locate_template('parts/extra-cards.php')); ?>
 
 	<?php include(locate_template('parts/public-assets.php')); ?>
 
