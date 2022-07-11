@@ -23,6 +23,11 @@ $registration_status = get_field("registration_status",$post_id);
 $status = ($registration_status) ? $registration_status : 'open';
 $blank_image = THEMEURI . "images/square.png";
 $status_custom_message = get_field("status_custom_message");
+
+$rates = get_field('rates_pop');
+$ratesTitle = get_field('pop_title');
+$ratesDesc = get_field('pop_desc');
+$ratesCTA = get_field('pop_ctas');
 ?>
 	
 <div id="primary" class="content-area-full content-default single-post <?php echo $has_hero;?> post-type-<?php echo $post_type;?>">
@@ -62,6 +67,29 @@ $status_custom_message = get_field("status_custom_message");
 					</div>
 				</section>
 				<?php } ?>
+
+
+				<section class="accomm-purchase">
+					<!-- <div class="button text-center">
+						<a href="<?php echo $btn_link ?>" class="btn-border"<?php echo $target ?>>
+							<span><?php echo $btn_title ?></span>
+						</a>
+					</div> -->	
+					<?php if($rates != '') { ?>
+						<div class="button text-center">
+							<a href="#rates" class="btn-border" id="inline">
+								<span>Inquire</span>
+							</a>
+						</div>	
+					<?php } ?>
+					<?php if( $rando_link ) { ?>
+						<div class="button text-center">
+							<a href="<?php echo $rando_link['url']; ?>" class="btn-border" >
+								<span><?php echo $rando_link['title']; ?></span>
+							</a>
+						</div>
+					<?php } ?>
+				</section>
 
 				<?php get_template_part("parts/subpage-tabs"); ?>
 
@@ -223,6 +251,41 @@ $status_custom_message = get_field("status_custom_message");
 			<?php endwhile; ?>
 		</main>
 	</div>
+
+<div style="display: none;">
+	<div id="rates">
+		<div class="rates-box">
+			<?php if($ratesTitle) { ?>
+				<h3><?php echo $ratesTitle; ?></h3>
+			<?php } ?>
+			<?php if($ratesDesc) { ?>
+				<p><?php echo $ratesDesc; ?></p>
+			<?php } ?>
+			<?php echo do_shortcode("$rates"); ?>
+			<?php 
+				// echo '<pre>';
+				// print_r($ratesCTA);
+				// echo '</pre>';
+			 ?>
+			<?php if( $ratesCTA ) { ?>
+				<div class="button text-center">
+				<?php foreach( $ratesCTA as $l ) { 
+					$btn_title = $l['link']['title'];
+					$btn_link = $l['link']['url'];
+					$btn_target = $l['link']['target'];
+					$target = ($btn_target) ? ' target="'.$btn_target.'"':'';
+				?>
+					<a href="<?php echo $btn_link ?>" class="btn-border"<?php echo $target ?>>
+						<span><?php echo $btn_title ?></span>
+					</a>
+				<?php } ?>
+				</div>	
+			<?php } ?>
+		</div>
+	</div>
+</div>
+
+
 <?php
 include( locate_template('inc/pagetabs-script.php') ); 
 get_footer();

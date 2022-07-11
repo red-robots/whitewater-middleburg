@@ -5693,6 +5693,7 @@ body.single-instructions {
 			@include tab {
 				height: 100%;
 				@include flexgroup-center();
+				justify-content: center;
 			}
 		}
 		.mstitle {

@@ -3828,7 +3828,7 @@ body.scrolled .site-header .navbar{background:rgba(255,255,255,0.95)}
 #section-awards .awards-columns .inside{padding:4vw 6vw}
 #section-awards .col-content .result-data{width:33.33%}
 .text-and-image-blocks .gallerycol .flexslider,.text-and-image-blocks .gallerycol .slides,.text-and-image-blocks .gallerycol .slides li.slide-item,.menu-sections .gallerycol .flexslider,.menu-sections .gallerycol .slides,.menu-sections .gallerycol .slides li.slide-item{height:100% !important}
-.text-and-image-blocks .textcol .inside,.menu-sections .textcol .inside{height:100%;display:-webkit-box;display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;-webkit-box-align:center;-ms-flex-align:center;align-items:center}
+.text-and-image-blocks .textcol .inside,.menu-sections .textcol .inside{height:100%;display:-webkit-box;display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center}
 .text-and-image-blocks .half .textcol,.menu-sections .half .textcol{width:40%}
 .text-and-image-blocks .half .gallerycol,.menu-sections .half .gallerycol{width:60%}
 .text-and-image-blocks .half.odd .textcol,.menu-sections .half.odd .textcol{border-right:15px solid #FFF}
