@@ -4,6 +4,7 @@ while ( have_posts() ) : the_post();
 	$rates = get_field('rates_pop');
 	$ratesTitle = get_field('pop_title');
 	$ratesDesc = get_field('pop_desc');
+	$ratesCTA = get_field('pop_ctas');
 	$top_notification = get_field("top_notification");
 	$main_description = get_field("accommodation_descr");
 	$taxonomy = 'pass_type';
@@ -633,6 +634,25 @@ while ( have_posts() ) : the_post();
 				<p><?php echo $ratesDesc; ?></p>
 			<?php } ?>
 			<?php echo do_shortcode("$rates"); ?>
+			<?php 
+				// echo '<pre>';
+				// print_r($ratesCTA);
+				// echo '</pre>';
+			 ?>
+			<?php if( $ratesCTA ) { ?>
+				<div class="button text-center">
+				<?php foreach( $ratesCTA as $l ) { 
+					$btn_title = $l['link']['title'];
+					$btn_link = $l['link']['url'];
+					$btn_target = $l['link']['target'];
+					$target = ($btn_target) ? ' target="'.$btn_target.'"':'';
+				?>
+					<a href="<?php echo $btn_link ?>" class="btn-border"<?php echo $target ?>>
+						<span><?php echo $btn_title ?></span>
+					</a>
+				<?php } ?>
+				</div>	
+			<?php } ?>
 		</div>
 	</div>
 </div>
