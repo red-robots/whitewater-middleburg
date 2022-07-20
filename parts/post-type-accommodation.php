@@ -57,7 +57,7 @@ while ( have_posts() ) : the_post();
 				<?php if($btnGroup == 'popup' && $rates != '') { ?>
 					<div class="button text-center">
 						<a href="#rates" class="btn-border" id="inline">
-							<span>View Rates</span>
+							<span>View Availability</span>
 						</a>
 					</div>	
 				<?php } ?>

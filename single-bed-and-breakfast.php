@@ -78,7 +78,7 @@ $ratesCTA = get_field('pop_ctas');
 					<?php if($rates != '') { ?>
 						<div class="button text-center">
 							<a href="#rates" class="btn-border" id="inline">
-								<span>Inquire</span>
+								<span>View Availability</span>
 							</a>
 						</div>	
 					<?php } ?>
@@ -116,6 +116,9 @@ $ratesCTA = get_field('pop_ctas');
 					$buttonTarget = ( isset($buttonPage['target']) && $buttonPage['target'] ) ? $buttonPage['target']:'_self';
 				}
 				$cta_buttons = get_field("event_cta_buttons");
+				// echo '<pre>';
+				// print_r($cta_buttons);
+				// echo '</pre>';
 				if($details) { ?>
 				<section id="section-event-details" data-section="<?php echo $event_title ?>" class="section-content dining-event-details">
 					<div class="wrapper">
@@ -141,9 +144,13 @@ $ratesCTA = get_field('pop_ctas');
 								</div>
 							<?php } ?>
 							
-							<?php if ( $status!='closed' && $cta_buttons ) { ?>
+							<?php if ( $status!='closed' && $cta_buttons ) { 
+
+								?>
 								<div class="buttondiv">
 								<?php foreach ($cta_buttons as $btn) { 
+									$ppopp = $btn['pagelink_pop']; 
+									if($ppopp == 'yes'){$LType='id="inline"';}
 										$buttonType = $btn['button_type'];
 										if($buttonType) { 
 											$b_type = 'button_' . $buttonType;
@@ -153,7 +160,9 @@ $ratesCTA = get_field('pop_ctas');
 													$btn_name = $b_val['pdf_button_name'];
 													$btn_link = ( isset($b_val['pdf_button_link']['url']) && $b_val['pdf_button_link']['url'] ) ? $b_val['pdf_button_link']['url']:'';
 													if($btn_name && $btn_link) { ?>
-														<a href="<?php echo $btn_link ?>" target="_blank" class="btn-sm btn-pdf"><span><?php echo $btn_name ?></span></a>
+														<a href="<?php echo $btn_link ?>" target="_blank" class="btn-sm btn-pdf" <?php echo $LType; ?>>
+															<span><?php echo $btn_name ?></span>
+														</a>
 													<?php } ?>
 
 												<?php } else { 
@@ -161,7 +170,9 @@ $ratesCTA = get_field('pop_ctas');
 													$btn_link = ( isset($b_val['url']) && $b_val['url'] ) ? $b_val['url'] : '';
 													$btn_target = ( isset($b_val['target']) && $b_val['target'] ) ? $b_val['target'] : '_self';
 													?>
-													<a href="<?php echo $btn_link ?>" target="<?php echo $btn_target ?>" class="btn-sm btn-pagelink"><span><?php echo $btn_name ?></span></a>
+													<a href="<?php echo $btn_link ?>" target="<?php echo $btn_target ?>" class="btn-sm btn-pagelink" <?php echo $LType; ?>>
+														<span><?php echo $btn_name ?></span>
+													</a>
 												<?php } ?>
 
 											<?php } ?>
