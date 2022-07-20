@@ -286,7 +286,7 @@ $ratesCTA = get_field('pop_ctas');
 					$btn_target = $l['link']['target'];
 					$target = ($btn_target) ? ' target="'.$btn_target.'"':'';
 				?>
-					<a href="<?php echo $btn_link ?>" class="btn-border"<?php echo $target ?>>
+					<a href="<?php echo $btn_link ?>" class="btn-border popbtns"<?php echo $target ?>>
 						<span><?php echo $btn_title ?></span>
 					</a>
 				<?php } ?>
