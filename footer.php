@@ -174,5 +174,14 @@ jQuery(document).ready(function($){
 
   gtag('config', 'G-4HG5PH6CL8');
 </script>
+<!-- Adwords specific for Accommodations -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-13073484-2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-13073484-2');
+</script>
 </body>
 </html>
