@@ -215,7 +215,9 @@ jQuery(document).ready(function ($) {
     showNavArrows: true
   });
   $("a#inline").fancybox({
-    'hideOnContentClick': true
+    'hideOnContentClick': true // 'autoDimensions' : false,
+    // 'width': 800
+
   }); // $('.reviews').flexslider({
   //    animation: "slide",
   //    animationLoop: false,

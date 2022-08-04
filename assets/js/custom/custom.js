@@ -240,7 +240,9 @@ Reference: http://jsfiddle.net/BB3JK/47/
 	});
 
 	$("a#inline").fancybox({
-		'hideOnContentClick': true
+		'hideOnContentClick': true,
+		// 'autoDimensions' : false,
+		// 'width': 800
 	});
 
 	 // $('.reviews').flexslider({
