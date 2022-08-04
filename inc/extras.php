@@ -15,6 +15,14 @@
  */
 define('THEMEURI',get_template_directory_uri() . '/');
 
+
+function lets_change_the_max_width( $args ) {
+    $args['max_width'] = '1380';
+    return $args;
+}
+add_filter( 'wpbs_get_calendar_output_default_args', 'lets_change_the_max_width' );
+
+
 add_filter(
   'tribe_events_views_v2_view_list_repository_args',
   function ( $args ) {
