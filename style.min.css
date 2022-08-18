@@ -3237,8 +3237,8 @@ body.page-template-page-group-events .noButtonTop #pageTabs{top:5px}
 .filter-section.two-options .filter-field-group.align-center{margin:0 auto}
 .filter-section.two-options .filter-field-group .filter-label{width:25%;padding-left:5px;padding-right:5px;font-size:16px}
 .filter-section.two-options .filter-field-group .select-wrap{width:75%;left:-11px}
-.custom-select-wrap2 .select-wrap .select2-container.select2-container--default,.custom-select-wrap2 .select-wrap .select2-dropdown.select2-dropdown--below{max-width:100% !important;width:calc(100% - 10px) !important}
-.custom-select-wrap2 .select-wrap .select2-results li{font-size:14px}
+.wpbs-select-container-wrap2 .select-wrap .select2-container.select2-container--default,.wpbs-select-container-wrap2 .select-wrap .select2-dropdown.select2-dropdown--below{max-width:100% !important;width:calc(100% - 10px) !important}
+.wpbs-select-container-wrap2 .select-wrap .select2-results li{font-size:14px}
 .select2-container--open{margin-top:0}
 .select2-container--open .select2-dropdown{border-top:none !important}
 .select2-search--dropdown{position:relative;top:-3px}
@@ -3710,6 +3710,12 @@ body.subpage .wpbs-main-wrapper .wpbs-form-container .wpbs-form-field button[typ
 body.subpage .wpbs-main-wrapper .wpbs-form-container .wpbs-form-field button[type=submit]{border-radius:0 !important}
 .wpbs-date,.wpbs-legend-item-icon-color{border:1px solid #ccc}
 .wpbs-container h2{display:none}
+.wpbs-select-container{position:relative;font-family:Arial}
+.wpbs-select-container select,.select-hide,.select-items{display:none}
+.wpbs-calendar-header-navigation{font-size:18px !important}
+.wpbs-container .wpbs-calendars .wpbs-calendar .wpbs-calendar-header{background-color:rgba(255,255,255,0)}
+.wpbs-container .wpbs-calendars .wpbs-calendar .wpbs-calendar-header .wpbs-calendar-header-navigation .wpbs-next,.wpbs-container .wpbs-calendars .wpbs-calendar .wpbs-calendar-header .wpbs-calendar-header-navigation .wpbs-prev{width:50px;height:50px;margin-top:-27px}
+.wpbs-container .wpbs-calendars .wpbs-calendar{background-color:#f2f2f2;border:0;padding:20px}
 @media screen and (max-device-width:1024px){.featured-events-section{background-color:#FFF}
 .featured-events-section .flexwrap{-webkit-box-pack:start;-ms-flex-pack:start;justify-content:flex-start}
 .featured-events-section .postbox{width:50%;float:left}
@@ -4051,6 +4057,7 @@ body.single-festival .filter-wrapper.filterstyle .select-wrap{width:75%}
 #timeline-area.timeline-wrapper .timeline .middle-line{width:50%}
 #timeline-area.timeline-wrapper .timeline .middle-line:before{content:"";display:block;width:25px;height:25px;border-radius:50%;background-color:#ba0d30;position:absolute;top:-10px;right:-12.5px}
 #timeline-area.timeline-wrapper .timeline .middle-line:after{content:"";display:block;width:7vw;border-bottom:2px solid #ba0d30;position:absolute;bottom:0;right:0;margin-right:-3.5vw;margin-bottom:-1.2vw}
+.wpbs-calendar-header-navigation{font-size:30px !important}
 }@media screen and (min-width:820px){.filter-wrapper.filterstyle .flexwrapfilters{-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row}
 .double-filter-wrapper .inside{width:45%;float:left;padding:2.5%}
 .double-filter-wrapper .filter-wrapper .select,.double-filter-wrapper .filter-wrapper .select-wrap.align-middle{width:100%}
@@ -4135,10 +4142,10 @@ section.accomm-purchase .button a{padding:20px 30px}
 .filter-wrapper.filterstyle .flexwrap .filter-label,.filter-wrapper.filterstyle .flexwrap .select-wrap{width:100%;float:left}
 .filter-wrapper.filterstyle .flexwrap .select-wrap{margin-bottom:10px}
 .single-fieldtrips#primary .post-type-entries .postbox.has-custom-width{width:100% !important}
-.custom-select-wrap2 .select-wrap.custom-select-wrap{float:left !important;max-width:80% !important;width:80% !important;left:0 !important;padding-left:0 !important;padding-right:0 !important}
-.custom-select-wrap2 .select-wrap.custom-select-wrap .select2-container.select2-container--default,.custom-select-wrap2 .select-wrap.custom-select-wrap .select2-dropdown.select2-dropdown--below{width:100% !important}
-.custom-select-wrap2 .filter-label{width:20% !important;padding-left:0 !important;padding-right:0 !important;float:left !important}
-.custom-select-wrap2 .filter-label span{padding-left:0 !important;padding-right:0 !important;font-size:3.2vw}
+.wpbs-select-container-wrap2 .select-wrap.wpbs-select-container-wrap{float:left !important;max-width:80% !important;width:80% !important;left:0 !important;padding-left:0 !important;padding-right:0 !important}
+.wpbs-select-container-wrap2 .select-wrap.wpbs-select-container-wrap .select2-container.select2-container--default,.wpbs-select-container-wrap2 .select-wrap.wpbs-select-container-wrap .select2-dropdown.select2-dropdown--below{width:100% !important}
+.wpbs-select-container-wrap2 .filter-label{width:20% !important;padding-left:0 !important;padding-right:0 !important;float:left !important}
+.wpbs-select-container-wrap2 .filter-label span{padding-left:0 !important;padding-right:0 !important;font-size:3.2vw}
 .jobs.resetBtn{float:none}
 .festival.resetBtn{position:absolute;left:0;top:44px;text-align:left}
 .filter-wrapper.with-reset-btn .resetBtn{top:-7px}
