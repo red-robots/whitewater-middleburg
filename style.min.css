@@ -3708,7 +3708,7 @@ body.single-bed-and-breakfast .popbtns{margin-bottom:10px}
 body.subpage .wpbs-main-wrapper .wpbs-form-container .wpbs-form-field button[type="submit"]{background-color:#ba0d30 !important}
 body.subpage .wpbs-main-wrapper .wpbs-form-container .wpbs-form-field button[type="submit"]:hover{background-color:rgba(186,13,48,0.7)}
 body.subpage .wpbs-main-wrapper .wpbs-form-container .wpbs-form-field button[type=submit]{border-radius:0 !important}
-.wpbs-date{border:1px solid #ccc}
+.wpbs-date,.wpbs-legend .wpbs-legend-item-icon{border:1px solid #ccc}
 .wpbs-container h2{display:none}
 .wpbs-select-container{position:relative;font-family:Arial}
 .wpbs-select-container select,.select-hide,.select-items{display:none}
