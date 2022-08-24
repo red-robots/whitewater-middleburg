@@ -3708,14 +3708,14 @@ body.single-bed-and-breakfast .popbtns{margin-bottom:10px}
 body.subpage .wpbs-main-wrapper .wpbs-form-container .wpbs-form-field button[type="submit"]{background-color:#ba0d30 !important}
 body.subpage .wpbs-main-wrapper .wpbs-form-container .wpbs-form-field button[type="submit"]:hover{background-color:rgba(186,13,48,0.7)}
 body.subpage .wpbs-main-wrapper .wpbs-form-container .wpbs-form-field button[type=submit]{border-radius:0 !important}
-.wpbs-date,.wpbs-legend-item-icon-color{border:1px solid #ccc}
+.wpbs-date{border:1px solid #ccc}
 .wpbs-container h2{display:none}
 .wpbs-select-container{position:relative;font-family:Arial}
 .wpbs-select-container select,.select-hide,.select-items{display:none}
 .wpbs-calendar-header-navigation{font-size:18px !important}
 .wpbs-container .wpbs-calendars .wpbs-calendar .wpbs-calendar-header{background-color:rgba(255,255,255,0)}
 .wpbs-container .wpbs-calendars .wpbs-calendar .wpbs-calendar-header .wpbs-calendar-header-navigation .wpbs-next,.wpbs-container .wpbs-calendars .wpbs-calendar .wpbs-calendar-header .wpbs-calendar-header-navigation .wpbs-prev{width:50px;height:50px;margin-top:-27px}
-.wpbs-container .wpbs-calendars .wpbs-calendar{background-color:#f2f2f2;border:0;padding:20px}
+.wpbs-container .wpbs-calendars .wpbs-calendar{border:1px solid #ccc;padding:40px 20px 20px 20px}
 @media screen and (max-device-width:1024px){.featured-events-section{background-color:#FFF}
 .featured-events-section .flexwrap{-webkit-box-pack:start;-ms-flex-pack:start;justify-content:flex-start}
 .featured-events-section .postbox{width:50%;float:left}

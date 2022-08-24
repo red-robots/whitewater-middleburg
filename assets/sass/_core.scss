@@ -14557,7 +14557,7 @@ body.subpage .wpbs-main-wrapper .wpbs-form-container .wpbs-form-field button[typ
 	border-radius: 0 !important;
 }
 // .wpbs-container.wpbs-calendar-1 .wpbs-legend-item-icon-1 div:first-of-type,
-.wpbs-date, .wpbs-legend-item-icon-color {
+.wpbs-date {
 	border: 1px solid #ccc;
 }
 .wpbs-container h2 {
@@ -14594,9 +14594,9 @@ body.subpage .wpbs-main-wrapper .wpbs-form-container .wpbs-form-field button[typ
 	margin-top: -27px;
 }
 .wpbs-container .wpbs-calendars .wpbs-calendar {
-	background-color: #f2f2f2;
-	border: 0;
-	padding: 20px;
+	// background-color: #f2f2f2;
+	border: 1px solid #ccc;
+	padding: 40px 20px 20px 20px;
 }
 
 // /* Style the arrow inside the select element: */
