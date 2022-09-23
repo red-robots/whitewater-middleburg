@@ -3604,6 +3604,7 @@ ul.items .show{display:block}
 .diff-filter-wrap.hide{max-width:0}
 .diff-filter-wrap.show{max-width:1000px}
 #fi .select2-container.show{width:100% !important}
+.camp-caro.swap{display:none}
 .sect-div-pad{padding:30px 0}
 .swp_scode_btn{text-align:center;margin:20px 0}
 .swp_scode_btn a{color:#fff !important;padding:10px 30px}
@@ -4060,6 +4061,8 @@ body.single-festival .filter-wrapper.filterstyle .select-wrap{width:75%}
 }@media screen and (min-width:820px){.filter-wrapper.filterstyle .flexwrapfilters{-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row}
 .double-filter-wrapper .inside{width:45%;float:left;padding:2.5%}
 .double-filter-wrapper .filter-wrapper .select,.double-filter-wrapper .filter-wrapper .select-wrap.align-middle{width:100%}
+.camp-caro.swap{display:block}
+.flexslider.swap{display:none}
 }@media(min-width:960px){.topinfo span.el{font-size:12px}
 #banner.taxonomy-banner .static-banner{height:650px}
 .home-video-gallery.count1 .video-big{height:600px}
