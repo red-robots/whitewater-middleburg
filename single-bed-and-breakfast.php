@@ -228,6 +228,9 @@ $ratesCTA = get_field('pop_ctas');
 				<?php } ?>
 
 
+				<?php include(locate_template('parts/text-image-blocks.php')); ?>
+
+
 				<?php  
 				/* WHAT TO BRING */
 				$wb_title = get_field("wb_title");
