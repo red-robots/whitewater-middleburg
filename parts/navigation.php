@@ -24,11 +24,9 @@ if($parents) { ?>
 <?php if( $center_visibility=='show'||$pisgah_visibility=='show'||$whitewater_visibility=='show'||$grayson_visibility=='show' ): ?>
 	<div class="prenav">
 		<ul>
-  			<li class="sitelinks corplink active">
-  				<a href="#" data-nav=".default">Santee</a>
-  			</li>
+  			
       <?php if( $whitewater_visibility == 'show' ) { ?>
-  			<li class="sitelinks whitewaterlink ">
+  			<li class="sitelinks whitewaterlink umbrella">
   				<a href="#" data-nav=".whitewaternav">Whitewater</a>
   			</li>
       <?php } ?>
@@ -42,6 +40,9 @@ if($parents) { ?>
   				<a href="#" data-nav=".pisgahnav">Pisgah</a>
   			</li>
       <?php } ?>
+        <li class="sitelinks corplink active">
+          <a href="#" data-nav=".default">Santee</a>
+        </li>
       <?php if( $grayson_visibility == 'show' ) { ?>
         <li class="sitelinks graysonlink ">
           <a href="#" data-nav=".graysonnav">Grayson</a>
