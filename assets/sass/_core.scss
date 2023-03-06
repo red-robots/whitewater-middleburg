@@ -47,6 +47,9 @@ a {
 		color: tint($red,50%);
 	}
 }
+.textalign-right {
+	text-align: right;
+}
 .sr-only {
 	display: inline-block;
 	width: 0;
@@ -1150,9 +1153,10 @@ body.nav-open {
 	}
 }
 #banner.subpageBanner {
-	margin-top: 86px;
+	margin-top: 55px;
+	// margin-top: 86px;
 	@include tab {
-		margin-top: 0;
+		// margin-top: 0;
 	}
 	.slideItem {
 		img {
@@ -5084,7 +5088,7 @@ body.single-instructions {
 	}
 }
 #primary.temp-yoga {
-	#section-schedule {
+	#section-schedule, .section-schedule {
 		margin-bottom: 0!important;
 	}
 	#schedule-bottomtext {
@@ -5100,14 +5104,15 @@ body.single-instructions {
 			color: $gray_dark;
 		}
 	}
-	#section-schedule {
+	#section-schedule, .section-schedule {
 		padding-top: 50px;
 		padding-bottom: 40px;
 	}
 	#section-galleries {
 		margin-top: 12px;
 	}
-	#instruction-team {
+	#instruction-team,
+	.instruction-team {
 		padding-top: 50px;
 		padding-bottom: 50px;
 		.wrapper {
@@ -5116,7 +5121,9 @@ body.single-instructions {
 		}
 	}
 }
-
+.extrapad {
+	padding: 30px 0;
+}
 #about-instructor {
 	background: #000;
 	color: #FFF;
@@ -10990,7 +10997,8 @@ body.subpage.single .content-default .important-notes-red,
 	.top {
 		display: inline-block;
 		position: absolute;
-		top: 86px;
+		top: 55px;
+		// top: 86px;
 		left: 0;
 		z-index: 30;
 	}
@@ -11032,7 +11040,7 @@ body.subpage.single .content-default .important-notes-red,
 			transform: skew(40deg);
 		}
 		&:after {
-			bottom: 0;
+			bottom: 1px;
 			height: 49.5%;
 			transform: skew(-40deg);
 		}

@@ -1550,6 +1550,7 @@ section:focus,div:focus{outline:0}
 a,input,button,select,textarea{-webkit-transition:all ease .3s;transition:all ease .3s}
 a{color:#ba0d30}
 a:hover{color:#dd8698}
+.textalign-right{text-align:right}
 .sr-only{display:inline-block;width:0;height:0;overflow:hidden;text-indent:-99em}
 .cf:before,.cf:after{content:" ";display:table}
 .cf:after{clear:both}
@@ -1713,7 +1714,7 @@ body.nav-open .menu-toggle{opacity:0}
 #banner ul.slides.single-slide .type-video .videoIframe{width:100% !important;height:100% !important;position:absolute;top:0;left:0;z-index:-100;display:block !important}
 #banner ul.slides.single-slide .type-video .videoIframeDiv.play_video .videoIframe{z-index:100}
 #banner ul.slides.single-slide .outer-video-wrap{position:absolute;top:0;left:0;width:100%;height:100%;z-index:30}
-#banner.subpageBanner{margin-top:86px}
+#banner.subpageBanner{margin-top:55px}
 #banner.subpageBanner .slideItem img{display:block !important;width:100%;height:auto;float:left}
 #banner.taxonomy-banner{margin-top:16px}
 #banner.taxonomy-banner .static-banner{background-size:cover;background-position:center;background-repeat:no-repeat;background-color:#707070}
@@ -2269,13 +2270,14 @@ body.single-instructions #information-content .text:first-child{margin-top:0}
 body.single-instructions #information-content .t1{color:#191919}
 body.single-instructions #information-content .t2{color:#707070}
 body.single-instructions #primary #section-faqs{padding-top:60px;padding-bottom:30px}
-#primary.temp-yoga #section-schedule{margin-bottom:0 !important}
+#primary.temp-yoga #section-schedule,#primary.temp-yoga .section-schedule{margin-bottom:0 !important}
 #primary.temp-yoga #schedule-bottomtext{padding-top:30px;padding-bottom:30px}
 #primary.temp-yoga #schedule-bottomtext .wrapper{font-size:15px;line-height:1.5;color:#707070}
-#primary.temp-yoga #section-schedule{padding-top:50px;padding-bottom:40px}
+#primary.temp-yoga #section-schedule,#primary.temp-yoga .section-schedule{padding-top:50px;padding-bottom:40px}
 #primary.temp-yoga #section-galleries{margin-top:12px}
-#primary.temp-yoga #instruction-team{padding-top:50px;padding-bottom:50px}
-#primary.temp-yoga #instruction-team .wrapper{font-size:15px;line-height:1.5}
+#primary.temp-yoga #instruction-team,#primary.temp-yoga .instruction-team{padding-top:50px;padding-bottom:50px}
+#primary.temp-yoga #instruction-team .wrapper,#primary.temp-yoga .instruction-team .wrapper{font-size:15px;line-height:1.5}
+.extrapad{padding:30px 0}
 #about-instructor{background:#000;color:#FFF;font-size:15px;line-height:1.5}
 #about-instructor .photo,#about-instructor .text{width:100%}
 #about-instructor .photo img{width:100%;height:auto;float:left}
@@ -3166,12 +3168,12 @@ body.subpage.single .content-default .important-notes-red p:last-child,.importan
 .section-full-button a.red-button-full:hover{background:#c12545}
 .section-full-button a.red-button-full:hover span:before,.section-full-button a.red-button-full:hover span:after{margin-right:-8px}
 .outer-banner-wrap{width:100%;float:left;position:relative;overflow:hidden}
-.outer-banner-wrap .top{display:inline-block;position:absolute;top:86px;left:0;z-index:30}
+.outer-banner-wrap .top{display:inline-block;position:absolute;top:55px;left:0;z-index:30}
 .outer-banner-wrap .button-arrow{display:inline-block;text-decoration:none;cursor:pointer;background:#ba0d30;color:#FFF;font-size:18px;line-height:1.2;text-transform:uppercase;text-align:center;position:relative;-webkit-transform:translateX(-10px);transform:translateX(-10px);padding:18px 10px 15px 30px;min-width:180px}
 .outer-banner-wrap .button-arrow span{letter-spacing:1px;position:relative;z-index:10}
 .outer-banner-wrap .button-arrow:before,.outer-banner-wrap .button-arrow:after{content:"";display:block;width:60px;height:50%;position:absolute;right:-15px;background:#ba0d30}
 .outer-banner-wrap .button-arrow:before{top:0;-webkit-transform:skew(40deg);transform:skew(40deg)}
-.outer-banner-wrap .button-arrow:after{bottom:0;height:49.5%;-webkit-transform:skew(-40deg);transform:skew(-40deg)}
+.outer-banner-wrap .button-arrow:after{bottom:1px;height:49.5%;-webkit-transform:skew(-40deg);transform:skew(-40deg)}
 .outer-banner-wrap .button-arrow:hover{-webkit-transform:translateX(0);transform:translateX(0)}
 #program-info.section-content{background:#707070;color:#FFF}
 #program-info.section-content .wrapper{padding-top:50px;padding-bottom:50px;font-size:15px;line-height:1.5}
@@ -3798,7 +3800,6 @@ section.route-stories.half .block{width:50%}
 #banner .static-banner .image-wrapper.yes-mobile img.desktop{display:block}
 #banner .static-banner .image-wrapper.yes-mobile img.mobile{display:none}
 #banner ul.slides.single-slide .type-video{margin-top:0}
-#banner.subpageBanner{margin-top:0}
 #banner.taxonomy-banner .static-banner{height:600px}
 #banner.taxonomy-banner .static-banner img.actual-image{display:none}
 body.single-activity #subpageSlides ul.slides,body.single-activity #subpageSlides li.sub-slide-item,body.single-activity #subpageSlides .slide-image,body.single-accommodation #subpageSlides ul.slides,body.single-accommodation #subpageSlides li.sub-slide-item,body.single-accommodation #subpageSlides .slide-image{height:100% !important}
