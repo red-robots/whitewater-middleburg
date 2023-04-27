@@ -262,7 +262,7 @@ $i=1;
 												<div class="map">
 													<img src="<?php bloginfo('template_url'); ?>/images/map.png">
 												</div>
-												<div class="location"><?php echo 'Pisgah'; ?></div>
+												<div class="location"><?php echo 'Santee'; ?></div>
 											</div>
 											<div class="button">
 												<a href="<?php echo $pagelink ?>" class="btn-sm"><span>See Details</span></a>
