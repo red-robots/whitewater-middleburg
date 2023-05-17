@@ -178,7 +178,8 @@ function get_children_of_page_id($page_id, $limit = 50) {
 			'pagelink' => $page['link'],
 			'locationname' => $page['acf']['eventlocation_text'],
 			'thumbImage' => array(
-				'url' => $page['acf']['mobile-banner']['url']
+				'url' => $page['acf']['vertical_image']['url']
+				// 'url' => $page['acf']['mobile-banner']['url']
 			),
 		);
 	}
