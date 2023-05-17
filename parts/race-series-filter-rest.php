@@ -110,6 +110,8 @@ function get_retreats_posts() {
 			'pagelink' => $post['link'],
 			'locationname' => $post['acf']['eventlocation_text'],
 			'event_date' => $event_date,
+			'start' => $post['acf']['start_date'],
+			'end' => $post['acf']['end_date'],
 			'thumbImage' => array(
 				'url' => $post['acf']['vertical_image']['url']
 				// 'url' => $page['acf']['mobile-banner']['url']
