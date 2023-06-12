@@ -112,6 +112,7 @@ function get_retreats_posts() {
 			'event_date' => $event_date,
 			'start' => $post['acf']['start_date'],
 			'end' => $post['acf']['end_date'],
+			'eventStatus' => ( $post['acf']['eventstatus'] ) ? $post['acf']['eventstatus']:'upcoming',
 			'thumbImage' => array(
 				'url' => $post['acf']['vertical_image']['url']
 				// 'url' => $page['acf']['mobile-banner']['url']
