@@ -360,10 +360,15 @@ jQuery(document).ready(function ($) {
     hash: false,
     showNavArrows: true
   });
-  $("a#inline").fancybox({
-    'hideOnContentClick': true // 'autoDimensions' : false,
-    // 'width': 800
+  // $("a.inline").fancybox({
+  //   'hideOnContentClick': true // 'autoDimensions' : false,
+  //   // 'width': 800
 
+  // });
+
+  $("a.inline").colorbox({
+    inline:true, 
+    // width:"50%"
   });
 
   
