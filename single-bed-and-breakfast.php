@@ -28,6 +28,8 @@ $rates = get_field('rates_pop');
 $ratesTitle = get_field('pop_title');
 $ratesDesc = get_field('pop_desc');
 $ratesCTA = get_field('pop_ctas');
+
+$inquire_button = get_field('inquire_button');
 ?>
 	
 <div id="primary" class="content-area-full content-default single-post <?php echo $has_hero;?> post-type-<?php echo $post_type;?>">
@@ -70,17 +72,19 @@ $ratesCTA = get_field('pop_ctas');
 
 
 				<section class="accomm-purchase">
-					<!-- <div class="button text-center">
-						<a href="<?php echo $btn_link ?>" class="btn-border"<?php echo $target ?>>
-							<span><?php echo $btn_title ?></span>
-						</a>
-					</div> -->	
-					<?php if($rates != '') { ?>
+					<?php if($inquire_button != '') { ?>
 						<div class="button text-center">
+							<a href="<?php echo $inquire_button['url']; ?>" class="btn-border" target="<?php echo $inquire_button['target']; ?>">
+								<span><?php echo $inquire_button['title']; ?></span>
+							</a>
+						</div>	
+					<?php } ?>
+					<?php if($rates != '') { ?>
+						<!-- <div class="button text-center">
 							<a href="#rates" class="btn-border" id="inline">
 								<span>View Availability</span>
 							</a>
-						</div>	
+						</div> -->	
 					<?php } ?>
 					<?php if( $rando_link ) { ?>
 						<div class="button text-center">
