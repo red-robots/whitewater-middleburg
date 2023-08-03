@@ -51,6 +51,7 @@ $schedule_items = get_field("schedule_items");
 $sch_anchor = get_field("schedule_anchor");
 $sch_anchor_sani = sanitize_title_with_dashes($sch_anchor);
 $schedule_title = get_field("schedule_title");
+$xtra_btns = get_field("xtra_btns"); 
 ?>
 <?php if ($schedule_items) { ?>
 <section id="section-<?php echo strtolower($sch_anchor_sani); ?>" data-section="<?php echo $sch_anchor; ?>" class="section-schedule section-content">
@@ -86,8 +87,20 @@ $schedule_title = get_field("schedule_title");
 <?php if ($important_note) { ?>
 <section id="schedule-bottomtext" class="section-content gray">
 	<div class="wrapper narrow text-center"><?php echo $important_note ?></div>	
+	<?php if( $xtra_btns ){  ?>
+		<div class="text-center">
+			<div class="buttondiv">
+			<?php foreach($xtra_btns as $btn) { ?>
+				<a href="<?php echo $btn['button']['url']; ?>" class="btn-sm btn-pdf" target="<?php echo $btn['button']['target']; ?>">
+					<?php echo $btn['button']['title']; ?>
+				</a>
+			<?php } ?>
+			</div>
+		</div>
+	<?php } ?>
 </section>
 <?php } ?>
+
 
 
 <?php $gal_anchor = get_field("gallery_anchor");
