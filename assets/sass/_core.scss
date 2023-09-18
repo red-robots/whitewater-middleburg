@@ -5699,12 +5699,33 @@ body.single-instructions {
 		border-radius: 0px;
 	}
 }
-
+body.single-instructions {
+	h2.programs {
+		padding: 50px 0 20px 0;
+		text-transform: uppercase;
+	}
+}
 .text-and-image-blocks,
 .menu-sections {
 	width: 100%;
 	float: left;
 	margin-top: 50px;
+	section.section-break {
+		width: 100%;
+		padding: 40px 0;
+		text-align: center;
+		.icon {
+			width: 50px;
+			margin: 20px auto;
+			img {
+				width: 100%;
+			}
+		}
+		h3 {
+			text-transform: uppercase;
+			text-align: center;
+		}
+	}
 	.mscol {
 		margin-top: 15px;
 		margin-bottom: 15px;
