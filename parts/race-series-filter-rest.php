@@ -88,9 +88,67 @@ $races = get_race_posts();
 // echo '<pre>';
 // print_r($races);
 // echo '</pre>';
+
+
 /*
 
-	Pull Race Posts First
+	Film Series
+
+*/
+function get_film_series() {
+  $url = 'https://center.whitewater.org/wp-json/wp/v2/film-series?per_page=99';
+  $response = wp_remote_get($url);
+  if ( is_wp_error( $response ) ) {
+    return false;
+  }
+  $posts = json_decode( wp_remote_retrieve_body( $response ), true );
+
+
+  $race_posts = array();
+  foreach ($posts as $post) {
+    $race_post = array(
+		'title' => $post['title']['rendered'],
+		'pagelink' => $post['link'],
+		'locationname' => $post['acf']['eventlocation_text'],
+		'start' => $post['acf']['start_date'],
+		'end' => $post['acf']['end_date'],
+		'hidePostfromMainPage' => $post['acf']['hidePostfromMainPage'],
+		'event_date' => $event_date,
+		'short_description' => $short_description,
+		'eventStatus' => ( $post['acf']['eventstatus'] ) ? $post['acf']['eventstatus']:'upcoming',
+		'thumbImage' => $post['acf']['thumbnail_image'],
+		// 'thumbImage' => $post['acf']['full_image'],
+		'eventlocation' => array(),
+		'terms' => array(),
+		'loc_terms' => array(),
+    );
+    
+	if (!empty($post['acf']['eventlocation'])) {
+    	foreach( $post['acf']['eventlocation'] as $rl ){
+    		$race_post['eventlocation'][] = array(
+		        'value' => $rl['value'], // Store the location value
+		        'label' => $rl['label'] // Store the location label
+		      );
+    	}
+	}
+
+	foreach ($race_post['eventlocation'] as $location) {
+      if ($location['value'] === 'santee') {
+        $race_posts[] = $race_post;
+      }
+    }
+
+  }
+  return $race_posts;
+}
+
+$films = get_film_series();
+// echo '<pre>';
+// print_r($films);
+// echo '</pre>';
+/*
+
+	Retreats
 
 */
 function get_retreats_posts() {
@@ -118,39 +176,8 @@ function get_retreats_posts() {
 				// 'url' => $page['acf']['mobile-banner']['url']
 			),
 		);
-	  //   $retreat_post = array(
-			// 'title' => $post['title']['rendered'],
-			// 'pagelink' => $post['link'],
-			// 'locationname' => $post['acf']['eventlocation_text'],
-			// 'start' => $post['acf']['start_date'],
-			// 'end' => $post['acf']['end_date'],
-			// 'hidePostfromMainPage' => $post['acf']['hidePostfromMainPage'],
-			// 'event_date' => $event_date,
-			// 'short_description' => $short_description,
-			// 'eventStatus' => ( $post['acf']['eventstatus'] ) ? $post['acf']['eventstatus']:'upcoming',
-			// 'thumbImage' => $post['acf']['thumbnail_image'],
-			// // 'thumbImage' => $post['acf']['full_image'],
-			// 'eventlocation' => array(),
-			// 'terms' => array(),
-			// 'loc_terms' => array(),
-	  //   );
 	}
- //    if (!empty($post['acf']['eventlocation'])) {
- //    	foreach( $post['acf']['eventlocation'] as $rl ){
- //    		$retreat_post['eventlocation'][] = array(
-	// 	        'value' => $rl['value'], // Store the location value
-	// 	        'label' => $rl['label'] // Store the location label
-	// 	      );
- //    	}
-	// }
-
-	// foreach ($retreat_post['eventlocation'] as $location) {
- //      if ($location['value'] === 'santee') {
- //        $retreat_posts[] = $retreat_post;
- //      }
- //    }
-
-  }
+ }
   return $retreat_post;
 }
 
@@ -385,6 +412,7 @@ $i=1;
 		      // merge everythig else
 		      
 		      $finalArray = array_merge( $sorted_events, $terms );
+		      $finalArray = array_merge( $finalArray, $films );
 		      $finalArray = array_merge( $finalArray, $cPages );
 		      $finalArray = array_merge( $finalArray, $retreats );
 
