@@ -295,6 +295,10 @@ jQuery(document).ready(function ($) {
     inline: true // width:"50%"
 
   });
+  $("a.accommodation").colorbox({
+    inline: true // width:"50%"
+
+  });
   /* Smooth Scrolling */
 
   $('a[href*="#"]:not([href="#"])').click(function () {
