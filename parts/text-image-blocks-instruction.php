@@ -11,11 +11,11 @@ $textImageData = get_field("textImageCol");
 ?>
 <section class="text-and-image-blocks nomtop">
 	<?php if( get_post_type() != 'retreat') { ?>
-		<div class="wrapper">
+		<!-- <div class="wrapper">
 			<div class="shead-icon text-center">
 				<h2 class="programs"><img src="<?php bloginfo('template_url'); ?>/images/icons/paddle.png" width="40"  /> Programs</h2>
 			</div> 
-		</div>
+		</div> -->
 	<?php } ?>
 	<div class="columns-2">
 	<?php $i=1; while ( have_rows('textImageCol') ) : the_row();
