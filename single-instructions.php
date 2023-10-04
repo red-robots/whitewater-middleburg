@@ -49,7 +49,7 @@ if($registerLink) {
 			<?php get_template_part("parts/subpage-tabs"); ?>
 
 			<?php get_template_part("parts/instructions-".$template); ?>
-			<?php get_template_part('parts/text-image-blocks-instruction'); ?>
+			
 
 		<?php endwhile; ?>
 

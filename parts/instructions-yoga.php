@@ -143,6 +143,7 @@ if( $instruction_text ) { ?>
 </section>
 <?php } ?>
 
+<?php get_template_part('parts/text-image-blocks-instruction'); ?>
 
 <?php 
 $photo = get_field("instructor_photo");
