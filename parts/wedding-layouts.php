@@ -76,7 +76,7 @@ $textImageData = get_field("textImageCol");
 							<?php } ?>
 							<?php if ($inquiry) { ?>
 								<div class="button inline">
-									<a href="<?php echo $inquiry['url'] ?>" class="btn-sm xs instr inline" target="<?php echo $inquiry['target'] ?>">
+									<a href="<?php echo $inquiry['url'] ?>" class="btn-sm xs  " target="<?php echo $inquiry['target'] ?>">
 										<span><?php echo $inquiry['title'] ?></span>
 									</a>
 								</div>
